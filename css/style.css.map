@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,EAAE;EACE,KAAK,EAAE,KAAK",
+"sources": ["../sass/library/pages/area_home/_header.scss"],
+"names": [],
+"file": "style.css"
+}
