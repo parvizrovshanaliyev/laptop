@@ -7,14 +7,15 @@
 /* line 10, ../sass/partials/_header.scss */
 header .d-lg-block .header-top {
   padding: 10px 0;
+  border-bottom: 1px solid #ebebeb;
 }
-/* line 14, ../sass/partials/_header.scss */
+/* line 15, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .welcome-message p {
   color: #555;
   font-size: 13px;
   line-height: 1;
 }
-/* line 23, ../sass/partials/_header.scss */
+/* line 24, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li {
   color: #555;
   cursor: pointer;
@@ -25,7 +26,7 @@ header .d-lg-block .header-top .header-top-settings ul li {
   margin-left: 20px;
   padding-left: 20px;
 }
-/* line 34, ../sass/partials/_header.scss */
+/* line 35, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li:before {
   top: 50%;
   left: 0;
@@ -38,7 +39,7 @@ header .d-lg-block .header-top .header-top-settings ul li:before {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 47, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li:hover .dropdown-list {
   opacity: 1;
   visibility: visible;
@@ -47,13 +48,13 @@ header .d-lg-block .header-top .header-top-settings ul li:hover .dropdown-list {
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 55, ../sass/partials/_header.scss */
+/* line 56, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li span {
   cursor: auto;
   font-size: 13px;
   text-transform: capitalize;
 }
-/* line 61, ../sass/partials/_header.scss */
+/* line 62, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li .dropdown-list {
   top: 100%;
   right: 0;
@@ -74,12 +75,12 @@ header .d-lg-block .header-top .header-top-settings ul li .dropdown-list {
   pointer-events: none;
   border: 1px solid #ebebeb;
 }
-/* line 77, ../sass/partials/_header.scss */
+/* line 78, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li {
   margin-left: 0;
   padding: 0;
 }
-/* line 81, ../sass/partials/_header.scss */
+/* line 82, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a {
   color: #555;
   font-size: 13px;
@@ -87,22 +88,168 @@ header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a {
   padding: 5px 0 3px;
   text-transform: capitalize;
 }
-/* line 88, ../sass/partials/_header.scss */
+/* line 89, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a:hover {
   color: #CC2121;
 }
-/* line 92, ../sass/partials/_header.scss */
+/* line 93, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a img {
   vertical-align: inherit;
 }
-/* line 100, ../sass/partials/_header.scss */
+/* line 101, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li:first-child {
   padding-left: 0;
   margin-left: 0;
 }
-/* line 104, ../sass/partials/_header.scss */
+/* line 105, ../sass/partials/_header.scss */
 header .d-lg-block .header-top .header-top-settings ul li:last-child li::before {
   display: none;
+}
+
+/* line 8, ../sass/partials/_navbar.scss */
+.header-area .main-menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 18, ../sass/partials/_navbar.scss */
+.header-area .main-menu ul .active a {
+  color: #CC2121;
+}
+/* line 24, ../sass/partials/_navbar.scss */
+.header-area .main-menu ul li a {
+  color: #242424;
+  font-size: 12px;
+  padding: 40px 21px;
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+/* line 33, ../sass/partials/_navbar.scss */
+.header-area .main-menu ul li a i {
+  font-size: 14px;
+  padding: 0 3px;
+}
+/* line 40, ../sass/partials/_navbar.scss */
+.header-area .main-menu ul li:hover a {
+  color: #CC2121;
+}
+/* line 49, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area {
+  padding-right: 10px;
+}
+/* line 53, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul li {
+  display: inline-block;
+  margin-left: 25px;
+  line-height: 1;
+}
+/* line 58, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul li a {
+  font-size: 20px;
+  line-height: 1;
+  color: #242424;
+  position: relative;
+}
+/* line 64, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul li a:hover {
+  color: #CC2121;
+}
+/* line 68, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul li a .notification {
+  top: -10px;
+  right: -8px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #CC2121;
+}
+/* line 83, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul li:first-child {
+  margin-left: 0;
+}
+/* line 88, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover {
+  position: relative;
+}
+/* line 91, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover .dropdown-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 11;
+  -webkit-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #ebebeb;
+}
+/* line 105, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover .dropdown-list li {
+  display: block;
+  margin-left: 0;
+}
+/* line 109, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover .dropdown-list li a {
+  color: #555;
+  font-size: 13px;
+  line-height: 1;
+  display: block;
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+/* line 117, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover .dropdown-list li a:hover {
+  color: #cc2121;
+}
+/* line 124, ../sass/partials/_navbar.scss */
+.header-area .header-configure-area ul .user-hover:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(none);
+  -ms-transform: translateY(none);
+  transform: translateY(none);
+}
+/* line 134, ../sass/partials/_navbar.scss */
+.header-area .sticky.is-sticky {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  -webkit-animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
+  animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
+}
+/* line 147, ../sass/partials/_navbar.scss */
+.header-area .sticky.is-sticky .main-menu li a {
+  padding: 20px 15px;
+}
+/* line 154, ../sass/partials/_navbar.scss */
+.header-area .sticky.is-sticky .main-menu li .dropdown li a {
+  padding: 5px 15px;
+}
+/* line 163, ../sass/partials/_navbar.scss */
+.header-area .sticky.is-sticky .main-menu li:first-child a {
+  padding-left: 0;
 }
 
 /* line 7, ../sass/style.scss */
