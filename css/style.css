@@ -1,6 +1,108 @@
-/* line 4, ../sass/partials/shop/_one.scss */
-.header-top {
+@media (min-width: 992px) {
+  /* line 5, ../sass/partials/_header.scss */
+  header .d-lg-block {
+    display: block !important;
+  }
+}
+/* line 10, ../sass/partials/_header.scss */
+header .d-lg-block .header-top {
   padding: 10px 0;
+}
+/* line 14, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .welcome-message p {
+  color: #555;
+  font-size: 13px;
+  line-height: 1;
+}
+/* line 23, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li {
+  color: #555;
+  cursor: pointer;
+  font-size: 12px;
+  position: relative;
+  margin-left: 40px;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+/* line 34, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li:before {
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 15px;
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 47, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 55, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li span {
+  cursor: auto;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+/* line 61, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li .dropdown-list {
+  top: 100%;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  padding: 15px 15px 20px;
+  width: 150px;
+  z-index: 9;
+  text-align: left;
+  background-color: #fff;
+  pointer-events: none;
+  border: 1px solid #ebebeb;
+}
+/* line 77, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li {
+  margin-left: 0;
+  padding: 0;
+}
+/* line 81, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a {
+  color: #555;
+  font-size: 13px;
+  display: block;
+  padding: 5px 0 3px;
+  text-transform: capitalize;
+}
+/* line 88, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a:hover {
+  color: #CC2121;
+}
+/* line 92, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li .dropdown-list li a img {
+  vertical-align: inherit;
+}
+/* line 100, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 104, ../sass/partials/_header.scss */
+header .d-lg-block .header-top .header-top-settings ul li:last-child li::before {
+  display: none;
 }
 
 /* line 7, ../sass/style.scss */

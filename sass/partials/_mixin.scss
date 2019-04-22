@@ -15,3 +15,9 @@
     background-position: $type2;
     background-repeat: $type3;
 }
+
+@mixin Transform($px){
+    -webkit-transform: translateY($px);
+    -ms-transform: translateY($px);
+    transform: translateY($px);
+}
