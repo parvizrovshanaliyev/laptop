@@ -1,4 +1,51 @@
-/* line 1, ../sass/library/pages/area_home/_header.scss */
 h1 {
   color: red;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  color: #555;
+}
+body a {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+body a:hover:focus {
+  color: #CC2121;
+  outline: none;
+  text-decoration: none;
+}
+body p {
+  margin-bottom: 0;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: #242424;
+  margin-bottom: 0;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+body img {
+  max-width: 100%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+body .bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

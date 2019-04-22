@@ -1,1 +1,60 @@
+@import'library/partials/_mixin.scss';
+@import'library/partials/_variables.scss';
 @import'library/pages/_home.scss';
+
+body {
+    font-size: $font-size;
+    line-height:$line-height;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color:$secondary-color;
+
+    a{
+        @include setTranstions(0.4s);
+        &:hover:focus{
+            color: $fifth-color;
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color:$primary-color;
+        margin-bottom: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+        }
+    }
+
+   
+    img {
+        max-width: 100%;
+        @include setTranstions(0.4s);
+    }
+    // #region img slider
+    .bg-img {
+        @include imgBackround(cover,center,no-repeat)
+    }
+   // #endregion img slider
+
+
+    
+
+
+    
+}
+
+
