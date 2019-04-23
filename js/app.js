@@ -12,11 +12,11 @@ $(document).ready(function(){
 	});
     /*------ Sticky menu end ------*/
     
-    /*----- sticky sidebar start -----*/
-	$('.sticky-sidebar').stickySidebar({
-		topSpacing: 120,
-		bottomSpacing: 20,
-		minWidth: 992,
-	}); 
-	/*----- sticky sidebar end -----*/
+    // /*----- sticky sidebar start -----*/
+	// $('.sticky-sidebar').stickySidebar({
+	// 	topSpacing: 120,
+	// 	bottomSpacing: 20,
+	// 	minWidth: 992,
+	// }); 
+	// /*----- sticky sidebar end -----*/
 });
