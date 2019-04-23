@@ -251,7 +251,11 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 .header-area .sticky.is-sticky .main-menu li:first-child a {
   padding-left: 0;
 }
-/* line 176, ../sass/partials/_navbar.scss */
+/* line 185, ../sass/partials/_navbar.scss */
+.header-area .mobile-header {
+  background-color: #fff;
+}
+/* line 187, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -267,28 +271,36 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   justify-content: space-between;
   position: relative;
 }
-/* line 190, ../sass/partials/_navbar.scss */
+/* line 201, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-logo {
   max-width: 140px;
   width: 100%;
 }
-/* line 195, ../sass/partials/_navbar.scss */
+/* line 208, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a {
   position: absolute;
   top: 93%;
   background-color: #fff;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+  visibility: hidden;
+  opacity: 0;
 }
-/* line 204, ../sass/partials/_navbar.scss */
+/* line 221, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li {
   box-sizing: border-box;
   padding: 0.6% 0 0 0;
 }
-/* line 207, ../sass/partials/_navbar.scss */
+/* line 224, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li .row {
   border-bottom: 1px solid #f4e6e6;
   position: relative;
 }
-/* line 211, ../sass/partials/_navbar.scss */
+/* line 228, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li .row::after {
   content: "";
   position: absolute;
@@ -301,20 +313,28 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 223, ../sass/partials/_navbar.scss */
+/* line 240, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li .row:hover::after {
   width: 100%;
   left: 0%;
 }
-/* line 228, ../sass/partials/_navbar.scss */
+/* line 245, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li .row .col-6:hover a {
   color: #CC2121;
 }
-/* line 234, ../sass/partials/_navbar.scss */
+/* line 251, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .pos-a .main-menu-area .m-menu ul li .row:hover .col-6 a {
   color: #CC2121;
 }
-/* line 247, ../sass/partials/_navbar.scss */
+/* line 264, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .active {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+  visibility: visible;
+  opacity: 1;
+}
+/* line 271, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler {
   display: -webkit-box;
   display: -webkit-flex;
@@ -325,7 +345,7 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   -ms-flex-align: center;
   align-items: center;
 }
-/* line 257, ../sass/partials/_navbar.scss */
+/* line 281, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap {
   display: inline-block;
   font-size: 24px;
@@ -333,15 +353,15 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   position: relative;
   margin-left: 30px;
 }
-/* line 264, ../sass/partials/_navbar.scss */
+/* line 288, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap a {
   color: #242424;
 }
-/* line 267, ../sass/partials/_navbar.scss */
+/* line 291, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap a:hover {
   color: #CC2121;
 }
-/* line 272, ../sass/partials/_navbar.scss */
+/* line 296, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap .notification {
   font-size: 13px;
   color: #fff;
@@ -356,20 +376,20 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   position: absolute;
   background-color: #CC2121;
 }
-/* line 288, ../sass/partials/_navbar.scss */
+/* line 312, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn {
   margin-left: 15px;
 }
-/* line 291, ../sass/partials/_navbar.scss */
-.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .off-canvas-btn {
+/* line 315, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .bars {
   font-size: 30px;
   cursor: pointer;
   padding: 10px 15px;
   line-height: 1;
   padding-right: 0;
 }
-/* line 298, ../sass/partials/_navbar.scss */
-.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .off-canvas-btn:hover {
+/* line 322, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .bars:hover {
   color: #CC2121;
 }
 
