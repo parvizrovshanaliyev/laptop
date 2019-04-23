@@ -36,4 +36,9 @@ $(document).ready(function() {
       nav.addClass("active");
     }
   });
+
+
+  /*------  slider active start ------*/
+	
+	/*------  slider active end ------*/
 });

@@ -346,22 +346,71 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   align-items: center;
 }
 /* line 281, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover {
+  position: relative;
+}
+/* line 284, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover .dropdown-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 11;
+  -webkit-transform: translateY(12px);
+  -ms-transform: translateY(12px);
+  transform: translateY(12px);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  border: 1px solid #ebebeb;
+}
+/* line 298, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover .dropdown-list li {
+  display: block;
+  margin-left: 0;
+}
+/* line 302, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover .dropdown-list li a {
+  color: #555;
+  font-size: 13px;
+  line-height: 1;
+  display: block;
+  padding: 8px 0;
+  text-transform: capitalize;
+}
+/* line 310, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover .dropdown-list li a:hover {
+  color: #cc2121;
+}
+/* line 317, ../sass/partials/_navbar.scss */
+.header-area .mobile-header .mobile-main-header .mobile-menu-toggler .user-hover:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(none);
+  -ms-transform: translateY(none);
+  transform: translateY(none);
+}
+/* line 323, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap {
   display: inline-block;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1;
   position: relative;
   margin-left: 30px;
 }
-/* line 288, ../sass/partials/_navbar.scss */
+/* line 330, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap a {
   color: #242424;
 }
-/* line 291, ../sass/partials/_navbar.scss */
+/* line 333, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap a:hover {
   color: #CC2121;
 }
-/* line 296, ../sass/partials/_navbar.scss */
+/* line 338, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mini-cart-wrap .notification {
   font-size: 13px;
   color: #fff;
@@ -376,11 +425,11 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   position: absolute;
   background-color: #CC2121;
 }
-/* line 312, ../sass/partials/_navbar.scss */
+/* line 354, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn {
   margin-left: 15px;
 }
-/* line 315, ../sass/partials/_navbar.scss */
+/* line 357, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .bars {
   font-size: 30px;
   cursor: pointer;
@@ -388,7 +437,7 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   line-height: 1;
   padding-right: 0;
 }
-/* line 322, ../sass/partials/_navbar.scss */
+/* line 364, ../sass/partials/_navbar.scss */
 .header-area .mobile-header .mobile-main-header .mobile-menu-toggler .mobile-menu-btn .bars:hover {
   color: #CC2121;
 }

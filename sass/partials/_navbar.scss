@@ -278,9 +278,51 @@
                 -ms-flex-align: center;
                 align-items: center;
 
+                .user-hover {
+                    position: relative;
+    
+                    .dropdown-list {
+                        position: absolute;
+                        top: 100%;
+                        right: 0;
+                        width: 150px;
+                        padding: 20px;
+                        background-color: #fff;
+                        z-index: 11;
+                        @include Transform(12px);
+                        @include setTranstions(0.4s);
+                        opacity: 0;
+                        visibility: hidden;
+                        border: 1px solid #ebebeb;
+    
+                        li {
+                            display: block;
+                            margin-left: 0;
+    
+                            a {
+                                color: $secondary-color;
+                                font-size: $font-size - 1px;
+                                line-height: $line-height - 0.8;
+                                display: block;
+                                padding: 8px 0;
+                                text-transform: capitalize;
+    
+                                &:hover {
+                                    color: #cc2121;
+                                }
+                            }
+                        }
+                    }
+    
+                    &:hover .dropdown-list {
+                        opacity: 1;
+                        visibility: visible;
+                        @include Transform(none);
+                    }
+                }
                 .mini-cart-wrap {
                     display: inline-block;
-                    font-size: $font-size + 10px;
+                    font-size: $font-size + 5px;
                     line-height: $line-height - 0.8;
                     position: relative;
                     margin-left: 30px;
