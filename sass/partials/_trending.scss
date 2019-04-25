@@ -126,6 +126,7 @@
 
     img {
         cursor: pointer;
+        padding: 9%;
     }
 
     // .box-cart{
@@ -166,6 +167,9 @@
             opacity: 0;
             visibility: hidden;
         }
+        a:hover {
+            color: #cc2121;
+          }
     }
 
 

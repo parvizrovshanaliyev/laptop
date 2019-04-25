@@ -627,14 +627,15 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 /* line 127, ../sass/partials/_trending.scss */
 .card img {
   cursor: pointer;
+  padding: 9%;
 }
-/* line 144, ../sass/partials/_trending.scss */
+/* line 145, ../sass/partials/_trending.scss */
 .card .button-group {
   position: absolute;
   right: 15px;
   top: 15px;
 }
-/* line 149, ../sass/partials/_trending.scss */
+/* line 150, ../sass/partials/_trending.scss */
 .card .button-group a {
   width: 38px;
   height: 38px;
@@ -655,18 +656,22 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   opacity: 0;
   visibility: hidden;
 }
-/* line 174, ../sass/partials/_trending.scss */
+/* line 170, ../sass/partials/_trending.scss */
+.card .button-group a:hover {
+  color: #cc2121;
+}
+/* line 178, ../sass/partials/_trending.scss */
 .card .price-box {
   line-height: 1;
 }
-/* line 178, ../sass/partials/_trending.scss */
+/* line 182, ../sass/partials/_trending.scss */
 .card .price-regular {
   font-size: 18px;
   line-height: 1;
   color: #cc2121;
   font-weight: 500;
 }
-/* line 185, ../sass/partials/_trending.scss */
+/* line 189, ../sass/partials/_trending.scss */
 .card .price-old {
   font-size: 15px;
   color: #999;
