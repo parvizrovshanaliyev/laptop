@@ -447,7 +447,6 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 .service-policy-area .service-policy-item {
   text-align: center;
   box-sizing: border-box;
-  padding: 6%;
 }
 /* line 13, ../sass/partials/_policy.scss */
 .service-policy-area .service-policy-item .icons {
@@ -512,6 +511,168 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   margin-bottom: 0;
 }
 
+/* line 1, ../sass/partials/_trending.scss */
+.section-title {
+  margin-top: -8px;
+  margin-bottom: 38px;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 479.98px) {
+  /* line 1, ../sass/partials/_trending.scss */
+  .section-title {
+    padding: 0 10px;
+  }
+}
+/* line 10, ../sass/partials/_trending.scss */
+.section-title h2 {
+  font-size: 30px;
+  color: #242424;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 575.98px) {
+  /* line 10, ../sass/partials/_trending.scss */
+  .section-title h2 {
+    font-size: 22px;
+  }
+}
+/* line 24, ../sass/partials/_trending.scss */
+.section-title p {
+  color: #707070;
+  font-size: 14px;
+  line-height: 1.3;
+  padding-top: 10px;
+}
+
+/* line 33, ../sass/partials/_trending.scss */
+.card {
+  position: relative;
+}
+/* line 36, ../sass/partials/_trending.scss */
+.card:hover .button-group a {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+/* line 44, ../sass/partials/_trending.scss */
+.card:hover .box-cart {
+  bottom: 15px;
+  opacity: 1;
+  visibility: visible;
+}
+/* line 50, ../sass/partials/_trending.scss */
+.card .product-badge {
+  position: absolute;
+}
+/* line 53, ../sass/partials/_trending.scss */
+.card .product-badge .product-label {
+  background: #cc2121;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  left: 20px;
+  line-height: 22px;
+  min-width: 46px;
+  padding: 0 10px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+}
+/* line 69, ../sass/partials/_trending.scss */
+.card .product-badge .product-label.discount {
+  background-color: #242424;
+}
+/* line 73, ../sass/partials/_trending.scss */
+.card .product-badge .product-label:nth-child(1) {
+  top: 20px;
+}
+/* line 77, ../sass/partials/_trending.scss */
+.card .product-badge .product-label:nth-child(2) {
+  top: 50px;
+}
+/* line 82, ../sass/partials/_trending.scss */
+.card .box-cart {
+  bottom: 0%;
+  left: 1;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 94, ../sass/partials/_trending.scss */
+.card .box-cart .btn {
+  background: #242424;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* line 101, ../sass/partials/_trending.scss */
+.card .box-cart a {
+  font-size: 26px;
+}
+/* line 104, ../sass/partials/_trending.scss */
+.card .box-cart a i {
+  padding-right: 16%;
+}
+/* line 127, ../sass/partials/_trending.scss */
+.card img {
+  cursor: pointer;
+}
+/* line 144, ../sass/partials/_trending.scss */
+.card .button-group {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+/* line 149, ../sass/partials/_trending.scss */
+.card .button-group a {
+  width: 38px;
+  height: 38px;
+  display: block;
+  font-size: 18px;
+  line-height: 42px;
+  color: #242424;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 174, ../sass/partials/_trending.scss */
+.card .price-box {
+  line-height: 1;
+}
+/* line 178, ../sass/partials/_trending.scss */
+.card .price-regular {
+  font-size: 18px;
+  line-height: 1;
+  color: #cc2121;
+  font-weight: 500;
+}
+/* line 185, ../sass/partials/_trending.scss */
+.card .price-old {
+  font-size: 15px;
+  color: #999;
+  padding-left: 5px;
+}
+
 /* line 7, ../sass/style.scss */
 body {
   font-size: 14px;
@@ -527,23 +688,23 @@ body a {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 17, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 body a:hover {
   color: #CC2121;
   outline: none;
   text-decoration: none;
 }
-/* line 22, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 body a :focus {
   color: #CC2121;
   outline: none;
   text-decoration: none;
 }
-/* line 29, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body p {
   margin-bottom: 0;
 }
-/* line 33, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 body h1,
 body h2,
 body h3,
@@ -553,23 +714,28 @@ body h6 {
   color: #242424;
   margin-bottom: 0;
 }
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 body ul {
   margin: 0;
   padding: 0;
 }
-/* line 45, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body ul li {
   list-style: none;
 }
-/* line 51, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
+body .section-space {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 59, ../sass/style.scss */
 body img {
   max-width: 100%;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 56, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 body .bg-img {
   background-size: cover;
   background-position: center;
