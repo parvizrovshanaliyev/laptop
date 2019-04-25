@@ -56,170 +56,267 @@ $(document).ready(function() {
     animationSpeed: 1000,
     autoHeight: false
   });
-    /*------  trendin product  ------*/
-    $("#lightSlider").lightSlider({
-      item: 3,
-      autoWidth: false,
-      slideMove: 1, // slidemove will be 1 if loop is true
-      slideMargin: 10,
-  
-      addClass: "",
-      mode: "slide",
-      useCSS: true,
-      cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
-      easing: "linear", //'for jquery animation',////
-  
-      speed: 400, //ms'
-      auto: false,
-      loop: false,
-      slideEndAnimation: true,
-      pause: 2000,
-  
-      keyPress: false,
-      controls: true,
-      prevHtml: "<",
-      nextHtml: ">",
-  
-      rtl: false,
-      adaptiveHeight: false,
-  
-      vertical: false,
-      verticalHeight: 500,
-      vThumbWidth: 100,
-  
-      thumbItem: 10,
-      pager: true,
-      gallery: false,
-      galleryMargin: 5,
-      thumbMargin: 5,
-      currentPagerPosition: "middle",
-  
-      enableTouch: true,
-      enableDrag: true,
-      freeMove: true,
-      swipeThreshold: 40,
-  
-      responsive: [],
-  
-      onBeforeStart: function(el) {},
-      onSliderLoad: function(el) {},
-      onBeforeSlide: function(el) {},
-      onAfterSlide: function(el) {},
-      onBeforeNextSlide: function(el) {},
-      onBeforePrevSlide: function(el) {}
-    });
-    /*------  trendin product  ------*/
+  /*------  trendin product  ------*/
+  $("#lightSlider").lightSlider({
+    item: 3,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 10,
 
-    /*------  news product  ------*/
-    $("#lightSlider2").lightSlider({
-      item: 3,
-      autoWidth: false,
-      slideMove: 1, // slidemove will be 1 if loop is true
-      slideMargin: 10,
-  
-      addClass: "",
-      mode: "slide",
-      useCSS: true,
-      cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
-      easing: "linear", //'for jquery animation',////
-  
-      speed: 400, //ms'
-      auto: false,
-      loop: false,
-      slideEndAnimation: true,
-      pause: 2000,
-  
-      keyPress: false,
-      controls: true,
-      prevHtml: "<",
-      nextHtml: ">",
-  
-      rtl: false,
-      adaptiveHeight: false,
-  
-      vertical: false,
-      verticalHeight: 500,
-      vThumbWidth: 100,
-  
-      thumbItem: 10,
-      pager: true,
-      gallery: false,
-      galleryMargin: 5,
-      thumbMargin: 5,
-      currentPagerPosition: "middle",
-  
-      enableTouch: true,
-      enableDrag: true,
-      freeMove: true,
-      swipeThreshold: 40,
-  
-      responsive: [],
-  
-      onBeforeStart: function(el) {},
-      onSliderLoad: function(el) {},
-      onBeforeSlide: function(el) {},
-      onAfterSlide: function(el) {},
-      onBeforeNextSlide: function(el) {},
-      onBeforePrevSlide: function(el) {}
-    });
-    /*------  trendin product  ------*/
+    addClass: "",
+    mode: "slide",
+    useCSS: true,
+    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
+    easing: "linear", //'for jquery animation',////
 
-    /*------  sale product  ------*/
-    $("#lightSlider3").lightSlider({
-      item: 3,
-      autoWidth: false,
-      slideMove: 1, // slidemove will be 1 if loop is true
-      slideMargin: 10,
-  
-      addClass: "",
-      mode: "slide",
-      useCSS: true,
-      cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
-      easing: "linear", //'for jquery animation',////
-  
-      speed: 400, //ms'
-      auto: false,
-      loop: false,
-      slideEndAnimation: true,
-      pause: 2000,
-  
-      keyPress: false,
-      controls: true,
-      prevHtml: "<",
-      nextHtml: ">",
-  
-      rtl: false,
-      adaptiveHeight: false,
-  
-      vertical: false,
-      verticalHeight: 500,
-      vThumbWidth: 100,
-  
-      thumbItem: 10,
-      pager: true,
-      gallery: false,
-      galleryMargin: 5,
-      thumbMargin: 5,
-      currentPagerPosition: "middle",
-  
-      enableTouch: true,
-      enableDrag: true,
-      freeMove: true,
-      swipeThreshold: 40,
-  
-      responsive: [],
-  
-      onBeforeStart: function(el) {},
-      onSliderLoad: function(el) {},
-      onBeforeSlide: function(el) {},
-      onAfterSlide: function(el) {},
-      onBeforeNextSlide: function(el) {},
-      onBeforePrevSlide: function(el) {}
-    });
-    /*------  trendin product  ------*/
+    speed: 400, //ms'
+    auto: false,
+    loop: false,
+    slideEndAnimation: true,
+    pause: 2000,
+
+    keyPress: false,
+    controls: true,
+    prevHtml: "<",
+    nextHtml: ">",
+
+    rtl: false,
+    adaptiveHeight: false,
+
+    vertical: false,
+    verticalHeight: 500,
+    vThumbWidth: 100,
+
+    thumbItem: 10,
+    pager: true,
+    gallery: false,
+    galleryMargin: 5,
+    thumbMargin: 5,
+    currentPagerPosition: "middle",
+
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+
+    responsive: [],
+
+    onBeforeStart: function(el) {},
+    onSliderLoad: function(el) {},
+    onBeforeSlide: function(el) {},
+    onAfterSlide: function(el) {},
+    onBeforeNextSlide: function(el) {},
+    onBeforePrevSlide: function(el) {}
+  });
+  /*------  trendin product  ------*/
+
+  /*------  news product  ------*/
+  $("#lightSlider2").lightSlider({
+    item: 3,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 10,
+
+    addClass: "",
+    mode: "slide",
+    useCSS: true,
+    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
+    easing: "linear", //'for jquery animation',////
+
+    speed: 400, //ms'
+    auto: false,
+    loop: false,
+    slideEndAnimation: true,
+    pause: 2000,
+
+    keyPress: false,
+    controls: true,
+    prevHtml: "<",
+    nextHtml: ">",
+
+    rtl: false,
+    adaptiveHeight: false,
+
+    vertical: false,
+    verticalHeight: 500,
+    vThumbWidth: 100,
+
+    thumbItem: 10,
+    pager: true,
+    gallery: false,
+    galleryMargin: 5,
+    thumbMargin: 5,
+    currentPagerPosition: "middle",
+
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+
+    responsive: [],
+
+    onBeforeStart: function(el) {},
+    onSliderLoad: function(el) {},
+    onBeforeSlide: function(el) {},
+    onAfterSlide: function(el) {},
+    onBeforeNextSlide: function(el) {},
+    onBeforePrevSlide: function(el) {}
+  });
+  /*------  trendin product  ------*/
+
+  /*------  sale product  ------*/
+  $("#lightSlider3").lightSlider({
+    item: 3,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 10,
+
+    addClass: "",
+    mode: "slide",
+    useCSS: true,
+    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
+    easing: "linear", //'for jquery animation',////
+
+    speed: 400, //ms'
+    auto: false,
+    loop: false,
+    slideEndAnimation: true,
+    pause: 2000,
+
+    keyPress: false,
+    controls: true,
+    prevHtml: "<",
+    nextHtml: ">",
+
+    rtl: false,
+    adaptiveHeight: false,
+
+    vertical: false,
+    verticalHeight: 500,
+    vThumbWidth: 100,
+
+    thumbItem: 10,
+    pager: true,
+    gallery: false,
+    galleryMargin: 5,
+    thumbMargin: 5,
+    currentPagerPosition: "middle",
+
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+
+    responsive: [],
+
+    onBeforeStart: function(el) {},
+    onSliderLoad: function(el) {},
+    onBeforeSlide: function(el) {},
+    onAfterSlide: function(el) {},
+    onBeforeNextSlide: function(el) {},
+    onBeforePrevSlide: function(el) {}
+  });
+  /*------  trendin product  ------*/
   /*------  section tabs ------*/
 
+  /*------ quick view modal slider ------*/
+  $("#lightSlider4").lightSlider({
+    item: 3,
+    autoWidth: false,
+    slideMove: 1, // slidemove will be 1 if loop is true
+    slideMargin: 10,
 
+    addClass: "",
+    mode: "slide",
+    useCSS: true,
+    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
+    easing: "linear", //'for jquery animation',////
 
+    speed: 400, //ms'
+    auto: false,
+    loop: false,
+    slideEndAnimation: true,
+    pause: 2000,
+
+    keyPress: false,
+    controls: true,
+    prevHtml: "<",
+    nextHtml: ">",
+
+    rtl: false,
+    adaptiveHeight: false,
+
+    vertical: false,
+    verticalHeight: 500,
+    vThumbWidth: 100,
+
+    thumbItem: 10,
+    pager: true,
+    gallery: false,
+    galleryMargin: 5,
+    thumbMargin: 5,
+    currentPagerPosition: "middle",
+
+    enableTouch: true,
+    enableDrag: true,
+    freeMove: true,
+    swipeThreshold: 40,
+
+    responsive: [],
+
+    onBeforeStart: function(el) {},
+    onSliderLoad: function(el) {},
+    onBeforeSlide: function(el) {},
+    onAfterSlide: function(el) {},
+    onBeforeNextSlide: function(el) {},
+    onBeforePrevSlide: function(el) {}
+  });
+  // $("#lightSliderModal").lightSlider({
+  //   gallery: true,
+  //   item: 1,
+  //   loop: true,
+  //   slideMargin: 0,
+  //   thumbItem: 9
+  // });
+
+  // $('.quickViewModal').on('showModal', function (e) {
+  //   $('.quickViewModal').("show");
+  // })
+  // $(document).on(".showModal",function(e){
+
+  //   e.preventDefault();
+  //   $('.quickViewModal').style.display="none";
+  // });
+
+  /*------  view modal slider ------*/
+
+  /*--------- quantity change js start ---------*/
+  $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
+  $('.pro-qty').append('<span class="inc qtybtn">+</span>');
+  $('.qtybtn').on('click', function () {
+      var $button = $(this);
+      var oldValue = $button.parent().find('input').val();
+      if ($button.hasClass('inc')) {
+          var newVal = parseFloat(oldValue) + 1;
+      } else {
+          // Don't allow decrementing below zero
+          if (oldValue > 0) {
+              var newVal = parseFloat(oldValue) - 1;
+          } else {
+              newVal = 0;
+          }
+      }
+      $button.parent().find('input').val(newVal);
+});
+/*--------- quantity change js end ---------*/
+	// /*------- Countdown Activation start -------*/
+	// $('[data-countdown]').each(function () {
+	// 	var $this = $(this),
+	// 		finalDate = $(this).data('countdown');
+	// 	$this.countdown(finalDate, function (event) {
+	// 		$this.html(event.strftime('<div class="single-countdown"><span class="single-countdown__time">%D</span><span class="single-countdown__text">Days</span></div><div class="single-countdown"><span class="single-countdown__time">%H</span><span class="single-countdown__text">Hours</span></div><div class="single-countdown"><span class="single-countdown__time">%M</span><span class="single-countdown__text">Mins</span></div><div class="single-countdown"><span class="single-countdown__time">%S</span><span class="single-countdown__text">Secs</span></div>'));
+	// 	});
+	// });
+  // /*------- Countdown Activation end -------*/
   
 });

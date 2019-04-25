@@ -553,9 +553,6 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 .card:hover .button-group a {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 /* line 44, ../sass/partials/_trending.scss */
 .card:hover .box-cart {
@@ -647,14 +644,11 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   border-radius: 50%;
   margin-bottom: 10px;
   background-color: #fff;
-  -webkit-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  transform: scale(0.6);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
 }
 /* line 170, ../sass/partials/_trending.scss */
 .card .button-group a:hover {
@@ -685,6 +679,8 @@ body {
   font-weight: 400;
   font-family: "Rubik", sans-serif;
   color: #555;
+  /*------ countdown style start ------*/
+  /*------ countdown style end ------*/
 }
 /* line 14, ../sass/style.scss */
 body a {
@@ -740,9 +736,160 @@ body img {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-/* line 65, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 body .bg-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+/* line 80, ../sass/style.scss */
+body .price-box {
+  line-height: 1;
+}
+/* line 84, ../sass/style.scss */
+body .price-regular {
+  font-size: 18px;
+  line-height: 1;
+  color: #cc2121;
+  font-weight: 500;
+}
+/* line 91, ../sass/style.scss */
+body .price-old {
+  font-size: 15px;
+  color: #999;
+  padding-left: 5px;
+}
+/* line 97, ../sass/style.scss */
+body .modal-dialog {
+  max-width: 1000px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 102, ../sass/style.scss */
+  body .modal-dialog {
+    max-width: 800px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  /* line 108, ../sass/style.scss */
+  body .modal-dialog {
+    max-width: 700px;
+  }
+}
+/* line 113, ../sass/style.scss */
+body .modal {
+  display: block !important;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -99;
+}
+/* line 121, ../sass/style.scss */
+body .modal.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  z-index: 99999999;
+  -webkit-animation: slideInDown 0.4s forwards;
+  animation: slideInDown 0.4s forwards;
+}
+/* line 130, ../sass/style.scss */
+body .modal .modal-header {
+  padding: 0 10px;
+  border-bottom: none;
+}
+/* line 135, ../sass/style.scss */
+body .modal .modal-header .close {
+  color: #242424;
+  font-size: 34px;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  right: 10px;
+  top: 10px;
+  font-weight: 500;
+  z-index: 999;
+  line-height: 30px;
+  border-radius: 50%;
+}
+/* line 153, ../sass/style.scss */
+body .modal .modal-body {
+  padding: 20px 20px 20px 20px;
+}
+@media only screen and (max-width: 479.98px) {
+  /* line 158, ../sass/style.scss */
+  body .modal .modal-body {
+    padding: 10px;
+  }
+}
+/* line 174, ../sass/style.scss */
+body .product-countdown {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 183, ../sass/style.scss */
+body .product-countdown .single-countdown {
+  text-align: center;
+  margin-right: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 50px;
+  background-color: #eaeaea;
+}
+/* line 192, ../sass/style.scss */
+body .product-countdown .single-countdown__time {
+  color: #cc2121;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  line-height: 1;
+}
+/* line 200, ../sass/style.scss */
+body .product-countdown .single-countdown__text {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+  line-height: 1;
+  text-transform: capitalize;
+}
+/* line 209, ../sass/style.scss */
+body .product-countdown .single-countdown:first-child {
+  background-color: #cc2121;
+}
+/* line 213, ../sass/style.scss */
+body .product-countdown .single-countdown:first-child .single-countdown__time,
+body .product-countdown .single-countdown:first-child .single-countdown__text {
+  color: #fff;
+}
+/* line 221, ../sass/style.scss */
+body .pro-qty input {
+  width: 28px;
+  float: left;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+}
+/* line 233, ../sass/style.scss */
+body .btn-cart2 {
+  color: #fff;
+  font-size: 14px;
+  padding: 9px 25px;
+  background-color: #CC2121;
+  text-transform: capitalize;
+}
+/* line 241, ../sass/style.scss */
+body .btn-cart2:hover {
+  color: #fff;
+  background-color: #242424;
 }

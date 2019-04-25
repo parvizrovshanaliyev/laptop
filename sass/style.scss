@@ -61,14 +61,189 @@ body {
         @include setTranstions(0.4s);
     }
 
+    // #region modal
+    //slider quick view
+
+
+
+
+
+
+
+    // #endregion modal
     // #region img slider
     .bg-img {
         @include imgBackround(cover, center, no-repeat)
     }
 
     // #endregion img slider
+    .price-box {
+        line-height: 1;
+    }
 
+    .price-regular {
+        font-size: 18px;
+        line-height: 1;
+        color: #cc2121;
+        font-weight: 500;
+    }
 
+    .price-old {
+        font-size: 15px;
+        color: #999;
+        padding-left: 5px;
+    }
+
+    .modal-dialog {
+        max-width: 1000px;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+        .modal-dialog {
+            max-width: 800px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        .modal-dialog {
+            max-width: 700px;
+        }
+    }
+
+    .modal {
+        display: block !important;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: -99;
+    }
+
+    .modal.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: visible;
+        z-index: 99999999;
+        -webkit-animation: slideInDown 0.4s forwards;
+        animation: slideInDown 0.4s forwards;
+    }
+
+    .modal .modal-header {
+        padding: 0 10px;
+        border-bottom: none;
+    }
+
+    .modal .modal-header .close {
+        color: #242424;
+        font-size: 34px;
+        opacity: 1;
+        display: block;
+        position: absolute;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        right: 10px;
+        top: 10px;
+        font-weight: 500;
+        z-index: 999;
+        line-height: 30px;
+        border-radius: 50%;
+    }
+
+    .modal .modal-body {
+        padding: 20px 20px 20px 20px;
+    }
+
+    @media only screen and (max-width: 479.98px) {
+        .modal .modal-body {
+            padding: 10px;
+        }
+    }
+
+    /*------ countdown style start ------*/
+    // .offer-text {
+    //     font-size: 15px;
+    //     font-weight: 400;
+    //     margin-top: 10px;
+    //   }
+
+    //   .offer-text strong {
+    //     font-weight: 500;
+    //   }
+
+    .product-countdown {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .product-countdown .single-countdown {
+        text-align: center;
+        margin-right: 10px;
+        padding: 10px 0;
+        border-radius: 5px;
+        width: 50px;
+        background-color: #eaeaea;
+    }
+
+    .product-countdown .single-countdown__time {
+        color: #cc2121;
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+        line-height: 1;
+    }
+
+    .product-countdown .single-countdown__text {
+        display: block;
+        font-size: 12px;
+        color: #555;
+        margin-top: 5px;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+
+    .product-countdown .single-countdown:first-child {
+        background-color: #cc2121;
+    }
+
+    .product-countdown .single-countdown:first-child .single-countdown__time,
+    .product-countdown .single-countdown:first-child .single-countdown__text {
+        color: #fff;
+    }
+
+    /*------ countdown style end ------*/
+
+    .pro-qty {
+        input {
+            width: 28px;
+            float: left;
+            border: none;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            text-align: center;
+            background-color: transparent;
+        }
+    }
+
+    .btn-cart2 {
+        color: #fff;
+        font-size: 14px;
+        padding: 9px 25px;
+        background-color: #CC2121;
+        text-transform: capitalize;
+    }
+    
+    .btn-cart2:hover {
+        color: #fff;
+        background-color: #242424;
+    }
+
+    
 
 
 
