@@ -13,7 +13,7 @@ body {
 
     a {
         color: $secondary-color;
-        @include setTranstions(0.4s);
+        @include setTranstions(0.3s);
 
         &:hover {
             color: $fifth-color;
@@ -58,7 +58,7 @@ body {
 
     img {
         max-width: 100%;
-        @include setTranstions(0.4s);
+        @include setTranstions(0.3s);
     }
 
     // #region modal
@@ -123,8 +123,8 @@ body {
         visibility: visible;
         pointer-events: visible;
         z-index: 99999999;
-        -webkit-animation: slideInDown 0.4s forwards;
-        animation: slideInDown 0.4s forwards;
+        -webkit-animation: slideInDown 0.3s forwards;
+        animation: slideInDown 0.3s forwards;
     }
 
     .modal .modal-header {
@@ -237,13 +237,283 @@ body {
         background-color: #CC2121;
         text-transform: capitalize;
     }
-    
+
     .btn-cart2:hover {
         color: #fff;
         background-color: #242424;
     }
 
-    
+
+
+
+
+    /*------ mini card modal ------*/
+    .modal.right {
+        .modal-dialog {
+            position: fixed;
+            top: 10;
+            right: 0;
+            width: 320px;
+            margin: auto;
+            height: 100%;
+
+            // right: -320px;
+            .modal-content {
+                height: 100%;
+                overflow-y: auto;
+                -webkit-transform: translate3d(0%, 0, 0);
+                -ms-transform: translate3d(0%, 0, 0);
+                -o-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+
+                // @include setTranstions(0.3s);
+
+                .modal-body {
+                    padding: 15px 15px 80px;
+                }
+            }
+        }
+
+    }
+
+    .modal.right.fade {
+        .modal-dialog {
+            //  right: 0px;
+            -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+            -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+            -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+        }
+    }
+
+    #MiniCard {
+        .modal-content {
+
+            .modal-body {
+
+                .minicart-content-box {
+
+                    overflow: auto;
+                    height: 100%;
+                    padding-right: 30px;
+                    margin-right: -15px;
+
+                    .minicart-item-wrapper {
+
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid #ebebeb;
+
+                        ul {
+
+                            li {
+                                padding-bottom: 20px;
+                                margin-bottom: 20px;
+                                border-bottom: 1px solid #ebebeb;
+                            }
+
+                            li:last-child {
+
+                                border-bottom: none;
+                                padding-bottom: 0;
+                            }
+
+                            .minicart-item {
+
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-flex-wrap: wrap;
+                                -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+
+                                .minicart-thumb {
+                                    max-width: 85px;
+                                    -webkit-flex-basis: 85px;
+                                    -ms-flex-preferred-size: 85px;
+                                    flex-basis: 85px;
+                                }
+
+                                .minicart-content {
+                                    padding: 0 10px;
+                                    max-width: calc(100% - 115px);
+                                    -webkit-flex-basis: calc(100% - 115px);
+                                    -ms-flex-preferred-size: calc(100% - 115px);
+                                    flex-basis: calc(100% - 115px);
+
+                                    .product-name {
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        line-height: 1.5;
+                                        padding-bottom: 10px;
+
+                                        a {
+                                            color: #242424;
+                                        }
+
+                                        a:hover {
+                                            color: #cc2121;
+                                        }
+                                    }
+
+                                    .cart-quantity {
+                                        font-size: 12px;
+                                        color: #555;
+                                        line-height: 1;
+
+                                        strong {
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            vertical-align: text-bottom;
+                                        }
+                                    }
+
+                                    .cart-price {
+                                        color: #cc2121;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        line-height: 1;
+                                    }
+                                }
+
+                                .minicart-remove {
+                                    max-width: 30px;
+                                    -webkit-flex-basis: 30px;
+                                    -ms-flex-preferred-size: 30px;
+                                    flex-basis: 30px;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    line-height: 1;
+                                    color: #242424;
+                                }
+
+                                .minicart-remove:hover {
+                                    color: #cc2121;
+                                }
+                            }
+                        }
+                    }
+
+                    .minicart-pricing-box {
+                        border-bottom: 1px solid #ebebeb;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        padding-top: 15px;
+
+                        li {
+                            margin-bottom: 5px;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -webkit-justify-content: space-between;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+
+                            span {
+                                font-size: 14px;
+                                color: #242424;
+                                text-transform: capitalize;
+
+                                strong {
+                                    color: #cc2121;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        li.total{
+                            span{
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            
+                        }
+
+                        li:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .minicart-button {
+                        a {
+                            color: #fff;
+                            font-size: 13px;
+                            display: block;
+                            font-weight: 500;
+                            line-height: 1;
+                            padding: 17px 0;
+                            background-color: #242424;
+                            text-transform: uppercase;
+                            border-radius: 40px;
+                            text-align: center;
+                            margin-bottom: 10px;
+
+                            i {
+                                padding-right: 5px;
+                            }
+
+                        }
+
+                        a:hover {
+                            background-color: #cc2121;
+                        }
+
+                        a:last-child {
+                            margin-bottom: 0;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    // .modal.right{
+    //     .modal-dialog {
+    //         position: fixed;
+    //         margin: auto;
+    //         width: 320px;
+    //         height: 100%;
+    //         -webkit-transform: translate3d(0%, 0, 0);
+    //             -ms-transform: translate3d(0%, 0, 0);
+    //              -o-transform: translate3d(0%, 0, 0);
+    //                 transform: translate3d(0%, 0, 0);
+    //                 .modal-content {
+    //                     height: 100%;
+    //                     overflow-y: auto;
+    //                     .modal-body {
+    //                         padding: 15px 15px 80px;
+    //                     }
+    //                 }
+    //     }
+    // }
+    // .modal.right.fade{
+    //     .modal-dialog {
+    //         right: -320px;
+    //         -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    //            -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    //              -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    //                 transition: opacity 0.3s linear, right 0.3s ease-out;
+    //     }
+    // }
+    // .modal.right.fade.in{
+    //     .modal-dialog {
+    //         right: 0;
+    //         .modal-content {
+    //             border-radius: 0;
+    //             border: none;
+    //             .modal-header {
+    //                 border-bottom-color: #EEEEEE;
+    //                 background-color: #FAFAFA;
+    //             }
+    //         }
+    //     }
+    // }
+    /*------ mini card modal ------*/
 
 
 

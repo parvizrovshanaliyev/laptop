@@ -18,6 +18,7 @@
   <!-- <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.min.css" /> -->
 
 
+  <!-- <link rel="stylesheet" href="css/modal.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -127,7 +128,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="minicart-btn">
+                      <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn">
                         <i class="fa fa-cart-arrow-down"></i>
                         <div class="notification">2</div>
                       </a>
@@ -219,10 +220,10 @@
                 </a>
               </div>
               <div class="mini-cart-wrap">
-                <a href="#" class="minicart-btn">
-                  <i class="fa fa-cart-arrow-down"></i>
-                  <div class="notification">2</div>
-                </a>
+                  <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn">
+                      <i class="fa fa-cart-arrow-down"></i>
+                      <div class="notification">2</div>
+                    </a>
               </div>
               <div class="mobile-menu-btn">
                 <div class="bars">
@@ -236,6 +237,89 @@
       <!-- mobile header top start -->
     </div>
     <!-- mobile responsive -->
+    <!-- mini card modal right sidebar -->
+    <!-- Modal -->
+	  <div class="modal right fade" id="MiniCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+  
+          <div class="modal-body pt-5 pr-4">
+              <div class="minicart-content-box">
+                  <div class="minicart-item-wrapper">
+                      <ul>
+                          <li class="minicart-item">
+                              <div class="minicart-thumb">
+                                  <a href="product-details.html">
+                                      <img src="assets/img/product/mini.jpg" alt="product">
+                                  </a>
+                              </div>
+                              <div class="minicart-content">
+                                  <h3 class="product-name">
+                                      <a href="product-details.html">Dozen White Botanical </a>
+                                  </h3>
+                                  <p>
+                                      <span class="cart-quantity">1 <strong>×</strong></span>
+                                      <span class="cart-price">$100.00</span>
+                                  </p>
+                              </div>
+                              <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                          </li>
+                          <li class="minicart-item">
+                              <div class="minicart-thumb">
+                                  <a href="product-details.html">
+                                      <img src="assets/img/product/mini.jpg" alt="product">
+                                  </a>
+                              </div>
+                              <div class="minicart-content">
+                                  <h3 class="product-name">
+                                      <a href="product-details.html">Dozen White Botanical </a>
+                                  </h3>
+                                  <p>
+                                      <span class="cart-quantity">1 <strong>×</strong></span>
+                                      <span class="cart-price">$80.00</span>
+                                  </p>
+                              </div>
+                              <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="minicart-pricing-box">
+                      <ul>
+                          <li>
+                              <span>sub-total</span>
+                              <span><strong>$300.00</strong></span>
+                          </li>
+                          <li>
+                              <span>Eco Tax (-2.00)</span>
+                              <span><strong>$10.00</strong></span>
+                          </li>
+                          <li>
+                              <span>VAT (20%)</span>
+                              <span><strong>$60.00</strong></span>
+                          </li>
+                          <li class="total">
+                              <span>total</span>
+                              <span><strong>$370.00</strong></span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="minicart-button">
+                      <a href="cart.html"><i class="fa fa-shopping-cart"></i> view cart</a>
+                      <a href="cart.html"><i class="fa fa-share"></i> checkout</a>
+                  </div>
+              </div>
+          </div>
+  
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+    <!-- mini card modal right sidebar -->
   </header>
   <!-- main wrapper start -->
   <main>
@@ -368,7 +452,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -403,7 +487,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -440,7 +524,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -477,7 +561,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -514,7 +598,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -571,7 +655,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -606,7 +690,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -643,7 +727,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -680,7 +764,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -717,7 +801,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -774,7 +858,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -809,7 +893,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -846,7 +930,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -883,7 +967,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -920,7 +1004,7 @@
                   <!-- product trend -->
                   <li>
                     <div class="card ">
-                      <a href="index.html"><img class="card-img-top" src="assets/img/product/l8.jpg" alt="laptop"></a>
+                      <a href="index.html"><img class="card-img-top" src="assets/img/product/middle.jpg" alt="laptop"></a>
                       <div class="product-badge">
                         <div class="product-label new">
                           <span>new</span>
@@ -980,29 +1064,30 @@
             <div class="modal-body">
               <div class="container-fluid">
                 <div class="row">
-                <!-- Quick view product slider -->
+                  <!-- Quick view product slider -->
                   <div class="col-md-6">
                     <ul id="vertical">
-                      <li data-thumb="assets/img/product/l8.jpg">
-                        <img src="assets/img/product/l8.jpg" alt="laptop">
+                      <li data-thumb="assets/img/product/large.jpg">
+                        <img src="assets/img/product/large.jpg" alt="laptop">
                       </li>
-                      <li data-thumb="assets/img/product/l8.jpg">
-                        <img src="assets/img/product/l8.jpg" alt="laptop">
+                      <li data-thumb="assets/img/product/large.jpg">
+                        <img src="assets/img/product/large.jpg" alt="laptop">
                       </li>
-                      <li data-thumb="assets/img/product/l8.jpg">
-                        <img src="assets/img/product/l8.jpg" alt="laptop">
+                      <li data-thumb="assets/img/product/large.jpg">
+                        <img src="assets/img/product/large.jpg" alt="laptop">
                       </li>
                     </ul>
                   </div>
-                <!-- Quick view product slider -->
-                <!-- Quick view Product Details -->
+                  <!-- Quick view product slider -->
+                  <!-- Quick view Product Details -->
                   <div class="col-md-5">
                     <div class="product-details-des quick-details">
                       <div class="manufacturer-name">
                         <a href="product-details.html">HasTech</a>
                       </div>
-                      <h3 class="product-name pt-3 pb-3">Dozen White Botanical Linen Dinner Napkins</h3>
-                      <p class="pro-desc">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, </p>
+                      <h3 class="product-name pt-3 pb-3">Dozen White Botanical </h3>
+                      <p class="pro-desc">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit
+                        amet, </p>
                       <ul>
                         <li>
 
@@ -1022,7 +1107,7 @@
                       </ul>
                     </div>
                   </div>
-                <!-- Quick view Product Details -->
+                  <!-- Quick view Product Details -->
                 </div>
               </div>
             </div>
