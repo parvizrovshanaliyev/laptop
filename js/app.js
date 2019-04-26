@@ -47,6 +47,11 @@ $(document).ready(function() {
   //   slider.play();
   //   slider.pause();
 
+
+
+
+
+
   /*------  slider active end ------*/
   /*------  section tabs ------*/
   $(".js-tabs-link").aniTabs({
@@ -56,7 +61,7 @@ $(document).ready(function() {
     animationSpeed: 1000,
     autoHeight: false
   });
-  /*------  trendin product  ------*/
+  /*------  trending product  ------*/
   $("#lightSlider").lightSlider({
     item: 3,
     autoWidth: false,
@@ -108,7 +113,7 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  trendin product  ------*/
+  /*------  trending product  ------*/
 
   /*------  news product  ------*/
   $("#lightSlider2").lightSlider({
@@ -162,7 +167,7 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  trendin product  ------*/
+  /*------  news product  ------*/
 
   /*------  sale product  ------*/
   $("#lightSlider3").lightSlider({
@@ -216,98 +221,58 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  trendin product  ------*/
+  /*------  sale product  ------*/
   /*------  section tabs ------*/
 
+
+
+
+
+
   /*------ quick view modal slider ------*/
-  $("#lightSlider4").lightSlider({
-    item: 3,
-    autoWidth: false,
-    slideMove: 1, // slidemove will be 1 if loop is true
-    slideMargin: 10,
+    $('#vertical').lightSlider({
+      gallery:true,
+      item:1,
+      vertical:true,
+      verticalHeight:295,
+      vThumbWidth:50,
+      thumbItem:8,
+      thumbMargin:4,
+      slideMargin:0
+    }); 
+  /*------ quick view modal slider ------*/
+  
 
-    addClass: "",
-    mode: "slide",
-    useCSS: true,
-    cssEasing: "ease", //'cubic-bezier(0.25, 0, 0.25, 1)',//
-    easing: "linear", //'for jquery animation',////
+  
 
-    speed: 400, //ms'
-    auto: false,
-    loop: false,
-    slideEndAnimation: true,
-    pause: 2000,
 
-    keyPress: false,
-    controls: true,
-    prevHtml: "<",
-    nextHtml: ">",
 
-    rtl: false,
-    adaptiveHeight: false,
 
-    vertical: false,
-    verticalHeight: 500,
-    vThumbWidth: 100,
 
-    thumbItem: 10,
-    pager: true,
-    gallery: false,
-    galleryMargin: 5,
-    thumbMargin: 5,
-    currentPagerPosition: "middle",
 
-    enableTouch: true,
-    enableDrag: true,
-    freeMove: true,
-    swipeThreshold: 40,
 
-    responsive: [],
 
-    onBeforeStart: function(el) {},
-    onSliderLoad: function(el) {},
-    onBeforeSlide: function(el) {},
-    onAfterSlide: function(el) {},
-    onBeforeNextSlide: function(el) {},
-    onBeforePrevSlide: function(el) {}
-  });
-  // $("#lightSliderModal").lightSlider({
-  //   gallery: true,
-  //   item: 1,
-  //   loop: true,
-  //   slideMargin: 0,
-  //   thumbItem: 9
-  // });
 
-  // $('.quickViewModal').on('showModal', function (e) {
-  //   $('.quickViewModal').("show");
-  // })
-  // $(document).on(".showModal",function(e){
 
-  //   e.preventDefault();
-  //   $('.quickViewModal').style.display="none";
-  // });
-
-  /*------  view modal slider ------*/
 
   /*--------- quantity change js start ---------*/
-  $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
-  $('.pro-qty').append('<span class="inc qtybtn">+</span>');
-  $('.qtybtn').on('click', function () {
-      var $button = $(this);
-      var oldValue = $button.parent().find('input').val();
-      if ($button.hasClass('inc')) {
-          var newVal = parseFloat(oldValue) + 1;
-      } else {
-          // Don't allow decrementing below zero
-          if (oldValue > 0) {
-              var newVal = parseFloat(oldValue) - 1;
-          } else {
-              newVal = 0;
-          }
-      }
-      $button.parent().find('input').val(newVal);
-});
+//   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
+//   $('.pro-qty').append('<span class="inc qtybtn">+</span>');
+//   $('.qtybtn').on('click', function () {
+//       var $button = $(this);
+//       var oldValue = $button.parent().find('input').val();
+//       if ($button.hasClass('inc')) {
+//           var newVal = parseFloat(oldValue) + 1;
+//       } else {
+//           // Don't allow decrementing below zero
+//           if (oldValue > 0) {
+//               var newVal = parseFloat(oldValue) - 1;
+//           } else {
+//               newVal = 0;
+//           }
+//       }
+//       $button.parent().find('input').val(newVal);
+// });
 /*--------- quantity change js end ---------*/
 	// /*------- Countdown Activation start -------*/
 	// $('[data-countdown]').each(function () {
