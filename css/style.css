@@ -673,22 +673,75 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 }
 
 /*------ compare modal ------*/
-/* line 7, ../sass/partials/shop/_compareModal.scss */
-#compare {
+/* line 8, ../sass/partials/shop/_compareModal.scss */
+.compareOpen {
   position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-/* line 11, ../sass/partials/shop/_compareModal.scss */
-#compare #CompareBtn {
-  position: fixed;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   color: white;
   background-color: #555;
   padding: 0.5% 1.5%;
   border: 1px solid;
   border-radius: 16%;
+}
+/* line 18, ../sass/partials/shop/_compareModal.scss */
+.compareOpen .tooltip-text {
+  position: absolute;
+  bottom: 53px;
+  left: -45px;
+  font-size: 16px;
+  background-color: #555;
+  padding: 20%;
+  border: 1px solid #555;
+  border-radius: 7px;
+  visibility: hidden;
+}
+/* line 28, ../sass/partials/shop/_compareModal.scss */
+.compareOpen .tooltip-text::after {
+  content: "";
+  position: absolute;
+  border: #555 transparent transparent transparent 5px;
+}
+/* line 35, ../sass/partials/shop/_compareModal.scss */
+.compareOpen:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* line 40, ../sass/partials/shop/_compareModal.scss */
+.compare {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  border-top: 1px solid #555;
+}
+
+/* line 52, ../sass/partials/shop/_compareModal.scss */
+.compare.fade {
+  bottom: -150px;
+  -webkit-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  -moz-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  -o-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  transition: opacity 0.5s linear, bottom 0.5s ease-out;
+}
+
+/* line 61, ../sass/partials/shop/_compareModal.scss */
+.compare.fade.show {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  z-index: 99999999;
+  -webkit-animation: slideInUp 1s forwards;
+  animation: slideInUp 1s forwards;
+}
+
+/* line 73, ../sass/partials/shop/_compareModal.scss */
+.compare .modal-header .close:focus {
+  outline: 0;
 }
 
 /*------ compare modal ------*/

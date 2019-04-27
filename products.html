@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/Animated-Tabs-anitabs/css/anitabs.css"> -->
-    <!-- <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.css" /> -->
+    <link rel="stylesheet" href="assets/Animated-Tabs-anitabs/css/anitabs.css">
+    <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.css" />
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
     <!-- <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.min.css" /> -->
 
@@ -24,21 +24,23 @@
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-    <title>Shop</title>
+    <title>Laptop</title>
 </head>
 
 <body>
+
+    <!-- #region header -->
     <header class="header-area">
         <!-- main header start -->
         <div class="main-header  d-none  d-lg-block">
             <!-- main header start -->
-            <!-- header top start -->
+            <!-- #region header top start -->
             <div class="header-top ">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="welcome-message">
-                                <p>Welcome to Asus online store</p>
+                                <p>Welcome to Debaco online store</p>
                             </div>
                         </div>
                         <div class="col-lg-6 text-right">
@@ -70,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <!-- header top end -->
+            <!-- #endregion header top end -->
             <!-- middle second line nav esas  nav -->
             <div class="header-main-area  sticky">
                 <div class="container">
@@ -86,7 +88,7 @@
                         <!-- start logo area -->
 
                         <!-- main menu area start -->
-                        <!-- nav bar -->
+                        <!-- #region nav bar -->
                         <div class="col-lg-7">
                             <div class="main-menu-area">
                                 <div class="main-menu">
@@ -95,7 +97,8 @@
                                         <ul>
                                             <li class="active animated bounce delay-1s"><a href="index.html">Home <i
                                                         class="fa fa-home"></i></a></li>
-                                            <li class="static "><a href="#">Pages <i class="fas fa-pager"></i></a></li>
+                                            <li class="static "><a href="#">Pages <i class="fas fa-pager"></i></i></a>
+                                            </li>
                                             <li class="static "><a href="products.html">Shop <i
                                                         class="fas fa-shopping-bag"></i></a></li>
                                             <li class="static"><a href="index.html">Blog <i class="fa fa-blog"></i></a>
@@ -110,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- nav bar -->
+                        <!-- #endregion nav bar -->
                         <!-- main menu area end -->
 
                         <!-- mini cart area start                   user cart wishlist-->
@@ -136,8 +139,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" data-toggle="modal" data-target="#MiniCard"
-                                                class="minicart-btn">
+                                            <a href="#" class="minicart-btn open-card">
                                                 <i class="fa fa-cart-arrow-down"></i>
                                                 <div class="notification">2</div>
                                             </a>
@@ -154,7 +156,8 @@
         </div>
         <!-- main header start -->
 
-        <!-- mobile responsive -->
+        <!--#region mobile responsive -->
+
         <div class="mobile-header d-lg-none  d-md-block fixed-top">
             <!--mobile header top start -->
             <div class="row align-items-center">
@@ -165,7 +168,7 @@
                                 <img src="assets/img/logo/logo.png" alt="Brand Logo">
                             </a>
                         </div>
-                        <!-- nav bar -->
+                        <!-- #region nav bar -->
                         <div id="nav" class="col-12 col-sm-12 col-md-12  pos-a ">
                             <div class="main-menu-area">
                                 <!-- main menu navbar start -->
@@ -184,7 +187,7 @@
                                                 <div class="col-6 col-sm-6 col-md-6 text-right"><a
                                                         href="products.html">Shop</a></div>
                                                 <div class="col-6 col-sm-6 col-md-6"><a href="products.html"><i
-                                                            class="fas fa-pager"></i></a></div>
+                                                            class="fas fa-shopping-bag"></i></a></div>
                                             </div>
                                         </li>
                                         <li class="static">
@@ -216,7 +219,7 @@
                                 <!-- main menu navbar end -->
                             </div>
                         </div>
-                        <!-- nav bar -->
+                        <!-- #endregion nav bar -->
                         <!-- main menu area end -->
                         <div class="col-6 col-sm-6 col-md-6  justify-content-end mobile-menu-toggler">
                             <div class="mini-cart-wrap user-hover">
@@ -236,7 +239,7 @@
                                 </a>
                             </div>
                             <div class="mini-cart-wrap">
-                                <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn">
+                                <a href="#"  class="minicart-btn open-card">
                                     <i class="fa fa-cart-arrow-down"></i>
                                     <div class="notification">2</div>
                                 </a>
@@ -252,18 +255,23 @@
             </div>
             <!-- mobile header top start -->
         </div>
-        <!-- mobile responsive -->
+        <!-- #endregion mobile responsive -->
+
+        <!-- #region Mini Card -->
+
         <!-- mini card modal right sidebar -->
-        <!-- Modal -->
-        <div class="modal right fade " id="MiniCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+
+        <div class="modal right fade " style="background: rgba(0,0,0,0.6);" id="MiniCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close close-card" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                       </button>
                     </div>
 
+                    <!-- #region modal body -->
                     <div class="modal-body pt-5 pr-4">
                         <div class="minicart-content-box">
                             <div class="minicart-item-wrapper">
@@ -332,143 +340,43 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- #endregion modal body -->
                 </div><!-- modal-content -->
             </div><!-- modal-dialog -->
-        </div><!-- modal -->
-        <!-- mini card modal right sidebar -->
+
+            <!-- mini card modal right sidebar -->
+            <!-- #endregion -->
+
     </header>
-    <!-- main wrapper start -->
+    <!-- #endregion header -->
+
+    <!--#region main wrapper start -->
     <main>
 
-
-        <section style=" height:500px; background-color: gray;">1</section>
-        <section style=" height:500px; background-color: rgb(105, 100, 100);">1</section>
-        <section style=" height:500px; background-color: rgb(121, 117, 117);">1</section>
-        <!-- #region Compare product modal down sidebar -->
-        <section id="compare">
-        <a href="#" id="CompareBtn"  data-target="#CompareModal" class="minicart-btn"><i class="fas fa-chevron-up"></i></a>        
-        <div id="Compare" class="compare border-0">
+        <a href="#" class="minicart-btn openBtn compareOpen">
+            <i class="fas fa-chevron-up">
+                <span class="tooltip-text">Compare</span>
+            </i>
+        </a>
+        <div class="compare fade  border-0 ">
             <div class="modal-dialog border-0 m-0" role="document"></div>
-                <div class="modal-content border-0">
+            <div style="border-top: 1px solid #555;" class="modal-content ">
 
-                    <div class="modal-header border-0">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body border-0">
-                        burada compare tezlikle gozleyin 
-                    </div>
-
+                <div class="modal-header border-0">
+                    <button type="button" class="close"  aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+
+                <div class="modal-body border-0">
+                    burada compare tezlikle gozleyin
+                </div>
+
             </div>
         </div>
-        
-        
-        <!-- <div class="modal down fade  " id="Compare" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    </div>
-
-                    <div class="modal-body pt-5 pr-4">
-                        burada compare tezlikle gozleyin 
-                    </div>
-
-                </div>
-            </div>
-        </div> -->
-        </section>
-
-        <!-- #endregion Compare product modal right sidebar -->
-        <!-- #region  Quick view modal start -->
-        <div class="modal section-space fade quickViewModal" tabindex="-1" role="dialog"
-            aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div style="max-width: 1100px;" class="modal-dialog modal-lg">
-                <div class="modal-content p-5">
-                    <div class="modal-header border-0">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <!-- Quick view product slider -->
-                                <div class="col-md-6">
-                                    <ul id="vertical">
-                                        <li data-thumb="assets/img/product/large.jpg">
-                                            <img src="assets/img/product/large.jpg" alt="laptop">
-                                        </li>
-                                        <li data-thumb="assets/img/product/large.jpg">
-                                            <img src="assets/img/product/large.jpg" alt="laptop">
-                                        </li>
-                                        <li data-thumb="assets/img/product/large.jpg">
-                                            <img src="assets/img/product/large.jpg" alt="laptop">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Quick view product slider -->
-                                <!-- Quick view Product Details -->
-                                <div class="col-md-5">
-                                    <div class="product-details-des quick-details">
-                                        <div class="manufacturer-name">
-                                            <a href="product-details.html">HasTech</a>
-                                        </div>
-                                        <h3 class="product-name pt-3 pb-3">Dozen White Botanical </h3>
-                                        <p class="pro-desc">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem
-                                            ipsum dolor sit
-                                            amet, </p>
-                                        <ul>
-                                            <li>
-
-                                            </li>
-                                            <li>
-                                                <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
-                                            </li>
-                                            <li>
-                                                <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
-                                            </li>
-                                            <li>
-                                                <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
-                                            </li>
-                                            <li>
-                                                <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Quick view Product Details -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="price-box">
-                            <span class="price-regular">$70.00</span>
-                            <span class="price-old"><del>$90.00</del></span>
-                        </div>
-                        <div class="quantity-cart-box d-flex align-items-center">
-                            <div class="action_link">
-                                <a class="btn btn-cart2" href="#">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="useful-links">
-                            <a href="#" data-toggle="tooltip" title="" data-original-title="Compare"><i
-                                    class="fas fa-sync"></i>compare</a>
-                            <a href="#" data-toggle="tooltip" title="" data-original-title="Wishlist"><i
-                                    class="far fa-heart"></i>wishlist</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- #endregion  Quick view modal end -->
     </main>
+    <!--#endregion main wrapper start -->
 
     <!-- main end -->
     <!-- Optional JavaScript -->

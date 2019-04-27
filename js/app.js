@@ -237,7 +237,56 @@ $(document).ready(function() {
   // #endregion quick view modal slider ------*/
   
 //#region Compare modal
+let modal = $('.compare');
+let openBtn=$(".openBtn");
+let closeBtn=$(".close");
+openBtn.on("click",function(e){
+e.preventDefault();
+modal.addClass("show");
+// modal.style.display="block";
+});
+closeBtn.on("click",function(){
+  modal.removeClass("show");
+  // modal.style.display="none"; 
+  // alert("salam");
+});
 
+//#endregion
+
+//#region minicard modal
+let modal1=$("#MiniCard");
+let openBtn1=$(".open-card");
+let closeBtn1=$(".close-card");
+
+openBtn1.on("click",function(e){
+e.preventDefault();
+if(modal.hasClass("show")){
+  modal.removeClass("show");
+ modal1.addClass("show");
+
+}else{
+ modal1.addClass("show");
+
+}
+});
+closeBtn1.on("click",function(){
+  
+
+  modal1.removeClass("show");
+  });
+
+  // window.onclick=function(event){
+  //   // if(event.target == modal1 && modal1.hasClass("show")){
+  //   //   // modal1.removeClass("show");
+  //   //   
+  //   // }
+  //   console.log("s");
+  // };
+  var $window = $(window);
+  $window.on('click', function (event) {
+		console.log(event);
+		
+	});
 //#endregion
   
 
