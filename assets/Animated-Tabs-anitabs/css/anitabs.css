@@ -27,6 +27,7 @@
     -webkit-transition: linear 0.2s;
     -ms-transition: linear 0.2s;
     transition: linear 0.2s;
+    font-size: 14px * 2;
 }
 
 .tabs-nav__drag {
@@ -56,7 +57,7 @@
 }
 
 .tabs-content .tabs-nav {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .tab {

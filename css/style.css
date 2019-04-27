@@ -895,60 +895,69 @@ body .btn-cart2:hover {
   color: #fff;
   background-color: #242424;
 }
-/* line 252, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 body .modal.right .modal-dialog {
   position: fixed;
-  top: 10;
-  right: 0;
-  width: 320px;
   margin: auto;
+  width: 320px;
+  right: 0;
   height: 100%;
+  -webkit-transition: 3s;
+  -o-transition: 3s;
+  transition: 3s;
 }
-/* line 261, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 body .modal.right .modal-dialog .modal-content {
   height: 100%;
   overflow-y: auto;
-  -webkit-transform: translate3d(0%, 0, 0);
-  -ms-transform: translate3d(0%, 0, 0);
-  -o-transform: translate3d(0%, 0, 0);
-  transform: translate3d(0%, 0, 0);
 }
-/* line 271, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 body .modal.right .modal-dialog .modal-content .modal-body {
   padding: 15px 15px 80px;
 }
-/* line 280, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 body .modal.right.fade .modal-dialog {
-  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-  transition: opacity 0.3s linear, right 0.3s ease-out;
+  right: -320px;
+  -webkit-transition: opacity 0.5s linear, right 0.5s ease-out;
+  -moz-transition: opacity 0.5s linear, right 0.5s ease-out;
+  -o-transition: opacity 0.5s linear, right 0.5s ease-out;
+  transition: opacity  0.5s linear, right 0.5s ease-out;
 }
-/* line 294, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
+body .modal.right.fade.show .modal-dialog {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  z-index: 99999999;
+  -webkit-animation: slideInRight 1s forwards;
+  animation: slideInRight 1s forwards;
+}
+/* line 308, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box {
   overflow: auto;
   height: 100%;
   padding-right: 30px;
   margin-right: -15px;
 }
-/* line 301, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 309, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul li {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 315, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
-/* line 321, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -958,14 +967,14 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 331, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-thumb {
   max-width: 85px;
   -webkit-flex-basis: 85px;
   -ms-flex-preferred-size: 85px;
   flex-basis: 85px;
 }
-/* line 338, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content {
   padding: 0 10px;
   max-width: calc(100% - 115px);
@@ -973,41 +982,41 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   -ms-flex-preferred-size: calc(100% - 115px);
   flex-basis: calc(100% - 115px);
 }
-/* line 345, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: 10px;
 }
-/* line 351, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name a {
   color: #242424;
 }
-/* line 355, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name a:hover {
   color: #cc2121;
 }
-/* line 360, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-quantity {
   font-size: 12px;
   color: #555;
   line-height: 1;
 }
-/* line 365, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-quantity strong {
   font-size: 16px;
   font-weight: 400;
   vertical-align: text-bottom;
 }
-/* line 372, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-price {
   color: #cc2121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
 }
-/* line 380, ../sass/style.scss */
+/* line 394, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove {
   max-width: 30px;
   -webkit-flex-basis: 30px;
@@ -1017,20 +1026,26 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   font-size: 18px;
   line-height: 1;
   color: #242424;
+  background: transparent;
+  border: none;
 }
-/* line 391, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove:focus {
+  outline: 0;
+}
+/* line 411, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove:hover {
   color: #cc2121;
 }
-/* line 398, ../sass/style.scss */
+/* line 418, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box {
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 20px;
   margin-bottom: 20px;
   padding-top: 15px;
 }
-/* line 404, ../sass/style.scss */
-body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box li {
+/* line 425, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li {
   margin-bottom: 5px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1041,27 +1056,28 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricin
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 415, ../sass/style.scss */
-body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box li span {
+/* line 437, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li.total span {
+  font-size: 16px;
+  font-weight: 500;
+  color: red;
+}
+/* line 444, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li span {
   font-size: 14px;
   color: #242424;
   text-transform: capitalize;
 }
-/* line 420, ../sass/style.scss */
-body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box li span strong {
+/* line 449, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li span strong {
   color: #cc2121;
   font-weight: 500;
 }
-/* line 428, ../sass/style.scss */
-body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box li.total span {
-  font-size: 16px;
-  font-weight: 500;
-}
-/* line 435, ../sass/style.scss */
-body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box li:last-child {
+/* line 458, ../sass/style.scss */
+body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li:last-child {
   margin-bottom: 0;
 }
-/* line 441, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a {
   color: #fff;
   font-size: 13px;
@@ -1075,15 +1091,15 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 454, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a i {
   padding-right: 5px;
 }
-/* line 460, ../sass/style.scss */
+/* line 484, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a:hover {
   background-color: #cc2121;
 }
-/* line 464, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a:last-child {
   margin-bottom: 0;
 }

@@ -248,45 +248,59 @@ body {
 
 
     /*------ mini card modal ------*/
+
     .modal.right {
         .modal-dialog {
             position: fixed;
-            top: 10;
-            right: 0;
-            width: 320px;
             margin: auto;
+            width: 320px;
+            right: 0;
             height: 100%;
+            // -webkit-transform: translate3d(0%, 0, 0);
+            // -ms-transform: translate3d(0%, 0, 0);
+            // -o-transform: translate3d(0%, 0, 0);
+            // transform: translate3d(0%, 0, 0);
 
-            // right: -320px;
+            @include setTranstions(3s);
             .modal-content {
                 height: 100%;
                 overflow-y: auto;
-                -webkit-transform: translate3d(0%, 0, 0);
-                -ms-transform: translate3d(0%, 0, 0);
-                -o-transform: translate3d(0%, 0, 0);
-                transform: translate3d(0%, 0, 0);
-
-                // @include setTranstions(0.3s);
 
                 .modal-body {
                     padding: 15px 15px 80px;
                 }
             }
         }
-
     }
 
     .modal.right.fade {
         .modal-dialog {
-            //  right: 0px;
-            -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
-            -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
-            -o-transition: opacity 0.3s linear, right 0.3s ease-out;
-            transition: opacity 0.3s linear, right 0.3s ease-out;
+            right: -320px;
+            -webkit-transition: opacity 0.5s linear, right 0.5s ease-out;
+            -moz-transition: opacity 0.5s linear, right 0.5s ease-out;
+            -o-transition: opacity 0.5s linear, right 0.5s ease-out;
+            transition: opacity  0.5s linear, right 0.5s ease-out;
         }
     }
 
+    .modal.right.fade.show .modal-dialog {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: visible;
+        z-index: 99999999;
+        -webkit-animation: slideInRight 1s forwards;
+        animation: slideInRight 1s forwards;
+    }
+
+
+
+
+
+
     #MiniCard {
+
+
         .modal-content {
 
             .modal-body {
@@ -386,6 +400,12 @@ body {
                                     font-size: 18px;
                                     line-height: 1;
                                     color: #242424;
+                                    background: transparent;
+                                    border: none;
+
+                                    &:focus {
+                                        outline: 0;
+                                    }
                                 }
 
                                 .minicart-remove:hover {
@@ -401,39 +421,43 @@ body {
                         margin-bottom: 20px;
                         padding-top: 15px;
 
-                        li {
-                            margin-bottom: 5px;
-                            display: -webkit-box;
-                            display: -webkit-flex;
-                            display: -ms-flexbox;
-                            display: flex;
-                            -webkit-box-pack: justify;
-                            -webkit-justify-content: space-between;
-                            -ms-flex-pack: justify;
-                            justify-content: space-between;
+                        ul {
+                            li {
+                                margin-bottom: 5px;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: justify;
+                                -webkit-justify-content: space-between;
+                                -ms-flex-pack: justify;
+                                justify-content: space-between;
 
-                            span {
-                                font-size: 14px;
-                                color: #242424;
-                                text-transform: capitalize;
+                                &.total {
+                                    span {
+                                        font-size: 16px;
+                                        font-weight: $font-weight + 100;
+                                        color: red;
+                                    }
+    
+                                }
+                                span {
+                                    font-size: 14px;
+                                    color: #242424;
+                                    text-transform: capitalize;
 
-                                strong {
-                                    color: #cc2121;
-                                    font-weight: 500;
+                                    strong {
+                                        color: #cc2121;
+                                        font-weight: $font-weight + 100;
+                                    }
                                 }
                             }
-                        }
 
-                        li.total{
-                            span{
-                                font-size: 16px;
-                                font-weight: 500;
+                           
+
+                            li:last-child {
+                                margin-bottom: 0;
                             }
-                            
-                        }
-
-                        li:last-child {
-                            margin-bottom: 0;
                         }
                     }
 
@@ -500,7 +524,7 @@ body {
     //                 transition: opacity 0.3s linear, right 0.3s ease-out;
     //     }
     // }
-    // .modal.right.fade.in{
+    // .modal.right.fade.show{
     //     .modal-dialog {
     //         right: 0;
     //         .modal-content {

@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.css" />
   <link rel="stylesheet" href="assets/Animated-Tabs-anitabs/css/anitabs.css">
-
+  <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.css" />
+  <link type="text/css" rel="stylesheet" href="css/animate.css" />
   <!-- <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.min.css" /> -->
 
 
@@ -91,8 +91,8 @@
                   <!-- main menu navbar start -->
                   <nav class="desktop-menu">
                     <ul>
-                      <li class="active"><a href="index.html">Home <i class="fa fa-home"></i></a></li>
-                      <li class="static"><a href="index.html">Shop <i class="fas fa-shopping-bag"></i></a></li>
+                      <li class="active animated bounce delay-1s"><a href="index.html">Home <i class="fa fa-home"></i></a></li>
+                      <li class="static "><a href="index.html">Shop <i class="fas fa-shopping-bag"></i></a></li>
                       <li class="static"><a href="index.html">Blog <i class="fa fa-blog"></i></a></li>
                       <li class="static"><a href="index.html">Contact <i class="fas fa-address-book"></i></a></li>
                       <li class="static"><a href="index.html">About <i class="fas fa-address-card"></i></a></li>
@@ -239,7 +239,7 @@
     <!-- mobile responsive -->
     <!-- mini card modal right sidebar -->
     <!-- Modal -->
-	  <div class="modal right fade" id="MiniCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+	  <div class="modal right fade " id="MiniCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
   
@@ -266,7 +266,7 @@
                                       <span class="cart-price">$100.00</span>
                                   </p>
                               </div>
-                              <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                              <button class="minicart-remove"><span aria-hidden="true">×</span></button>
                           </li>
                           <li class="minicart-item">
                               <div class="minicart-thumb">
@@ -283,7 +283,7 @@
                                       <span class="cart-price">$80.00</span>
                                   </p>
                               </div>
-                              <button class="minicart-remove"><i class="lnr lnr-cross"></i></button>
+                              <button class="minicart-remove"><span aria-hidden="true">×</span></button>
                           </li>
                       </ul>
                   </div>
@@ -1132,6 +1132,7 @@
         </div>
       </div>
       <!-- Quick view modal end -->
+      <!-- <div class="animated bounce delay-2s">Example</div> -->
     </section>
     <!-- tab section new trend sales -->
   </main>
