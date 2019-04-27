@@ -1,6 +1,6 @@
 $(document).ready(function() {
   console.log("ssss");
-  /*------ Sticky menu start ------*/
+  //  #region Sticky menu start 
   var $window = $(window);
   $window.on("scroll", function() {
     var scroll = $window.scrollTop();
@@ -36,6 +36,7 @@ $(document).ready(function() {
       nav.addClass("active");
     }
   });
+  //  #endregion Sticky menu start
 
   /*------  slider trending active start ------*/
   // var slider = $("#lightSlider").lightSlider();
@@ -48,12 +49,9 @@ $(document).ready(function() {
   //   slider.pause();
 
 
-
-
-
-
   /*------  slider active end ------*/
-  /*------  section tabs ------*/
+
+ // #region section tabs new sale trending ------
   $(".js-tabs-link").aniTabs({
     animation: "slide",
 
@@ -222,14 +220,10 @@ $(document).ready(function() {
     onBeforePrevSlide: function(el) {}
   });
   /*------  sale product  ------*/
-  /*------  section tabs ------*/
+ // #endregion section tabs new sale trending ------
+  
 
-
-
-
-
-
-  /*------ quick view modal slider ------*/
+ // #region quick view modal slider 
     $('#vertical').lightSlider({
       gallery:true,
       item:1,
@@ -240,9 +234,11 @@ $(document).ready(function() {
       thumbMargin:4,
       slideMargin:0
     }); 
-  /*------ quick view modal slider ------*/
+  // #endregion quick view modal slider ------*/
   
+//#region Compare modal
 
+//#endregion
   
 
 

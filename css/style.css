@@ -672,6 +672,26 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   padding-left: 5px;
 }
 
+/*------ compare modal ------*/
+/* line 7, ../sass/partials/shop/_compareModal.scss */
+#compare {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* line 11, ../sass/partials/shop/_compareModal.scss */
+#compare #CompareBtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background-color: #555;
+  padding: 0.5% 1.5%;
+  border: 1px solid;
+  border-radius: 16%;
+}
+
+/*------ compare modal ------*/
 /* line 7, ../sass/style.scss */
 body {
   font-size: 14px;
@@ -761,10 +781,6 @@ body .price-old {
   color: #999;
   padding-left: 5px;
 }
-/* line 97, ../sass/style.scss */
-body .modal-dialog {
-  max-width: 1000px;
-}
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   /* line 102, ../sass/style.scss */
   body .modal-dialog {
@@ -791,15 +807,13 @@ body .modal.show {
   visibility: visible;
   pointer-events: visible;
   z-index: 99999999;
-  -webkit-animation: slideInDown 0.3s forwards;
-  animation: slideInDown 0.3s forwards;
 }
-/* line 130, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 body .modal .modal-header {
   padding: 0 10px;
   border-bottom: none;
 }
-/* line 135, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 body .modal .modal-header .close {
   color: #242424;
   font-size: 34px;
@@ -817,17 +831,17 @@ body .modal .modal-header .close {
   line-height: 30px;
   border-radius: 50%;
 }
-/* line 153, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 body .modal .modal-body {
   padding: 20px 20px 20px 20px;
 }
 @media only screen and (max-width: 479.98px) {
-  /* line 158, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   body .modal .modal-body {
     padding: 10px;
   }
 }
-/* line 174, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 body .product-countdown {
   display: -webkit-box;
   display: -webkit-flex;
@@ -836,7 +850,7 @@ body .product-countdown {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 183, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 body .product-countdown .single-countdown {
   text-align: center;
   margin-right: 10px;
@@ -845,7 +859,7 @@ body .product-countdown .single-countdown {
   width: 50px;
   background-color: #eaeaea;
 }
-/* line 192, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 body .product-countdown .single-countdown__time {
   color: #cc2121;
   font-size: 18px;
@@ -853,7 +867,7 @@ body .product-countdown .single-countdown__time {
   display: block;
   line-height: 1;
 }
-/* line 200, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 body .product-countdown .single-countdown__text {
   display: block;
   font-size: 12px;
@@ -862,16 +876,16 @@ body .product-countdown .single-countdown__text {
   line-height: 1;
   text-transform: capitalize;
 }
-/* line 209, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 body .product-countdown .single-countdown:first-child {
   background-color: #cc2121;
 }
-/* line 213, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 body .product-countdown .single-countdown:first-child .single-countdown__time,
 body .product-countdown .single-countdown:first-child .single-countdown__text {
   color: #fff;
 }
-/* line 221, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 body .pro-qty input {
   width: 28px;
   float: left;
@@ -882,7 +896,7 @@ body .pro-qty input {
   text-align: center;
   background-color: transparent;
 }
-/* line 233, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 body .btn-cart2 {
   color: #fff;
   font-size: 14px;
@@ -890,12 +904,12 @@ body .btn-cart2 {
   background-color: #CC2121;
   text-transform: capitalize;
 }
-/* line 241, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 body .btn-cart2:hover {
   color: #fff;
   background-color: #242424;
 }
-/* line 253, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 body .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
@@ -906,24 +920,24 @@ body .modal.right .modal-dialog {
   -o-transition: 3s;
   transition: 3s;
 }
-/* line 265, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 body .modal.right .modal-dialog .modal-content {
   height: 100%;
   overflow-y: auto;
 }
-/* line 269, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 body .modal.right .modal-dialog .modal-content .modal-body {
   padding: 15px 15px 80px;
 }
-/* line 277, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 body .modal.right.fade .modal-dialog {
   right: -320px;
   -webkit-transition: opacity 0.5s linear, right 0.5s ease-out;
   -moz-transition: opacity 0.5s linear, right 0.5s ease-out;
   -o-transition: opacity 0.5s linear, right 0.5s ease-out;
-  transition: opacity  0.5s linear, right 0.5s ease-out;
+  transition: opacity 0.5s linear, right 0.5s ease-out;
 }
-/* line 286, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 body .modal.right.fade.show .modal-dialog {
   right: 0;
   opacity: 1;
@@ -933,31 +947,31 @@ body .modal.right.fade.show .modal-dialog {
   -webkit-animation: slideInRight 1s forwards;
   animation: slideInRight 1s forwards;
 }
-/* line 308, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box {
   overflow: auto;
   height: 100%;
   padding-right: 30px;
   margin-right: -15px;
 }
-/* line 315, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 323, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul li {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ebebeb;
 }
-/* line 329, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
-/* line 335, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -967,14 +981,14 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-/* line 345, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-thumb {
   max-width: 85px;
   -webkit-flex-basis: 85px;
   -ms-flex-preferred-size: 85px;
   flex-basis: 85px;
 }
-/* line 352, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content {
   padding: 0 10px;
   max-width: calc(100% - 115px);
@@ -982,41 +996,41 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   -ms-flex-preferred-size: calc(100% - 115px);
   flex-basis: calc(100% - 115px);
 }
-/* line 359, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   padding-bottom: 10px;
 }
-/* line 365, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name a {
   color: #242424;
 }
-/* line 369, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .product-name a:hover {
   color: #cc2121;
 }
-/* line 374, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-quantity {
   font-size: 12px;
   color: #555;
   line-height: 1;
 }
-/* line 379, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-quantity strong {
   font-size: 16px;
   font-weight: 400;
   vertical-align: text-bottom;
 }
-/* line 386, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-content .cart-price {
   color: #cc2121;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
 }
-/* line 394, ../sass/style.scss */
+/* line 395, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove {
   max-width: 30px;
   -webkit-flex-basis: 30px;
@@ -1029,22 +1043,22 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-w
   background: transparent;
   border: none;
 }
-/* line 406, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove:focus {
   outline: 0;
 }
-/* line 411, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-item-wrapper ul .minicart-item .minicart-remove:hover {
   color: #cc2121;
 }
-/* line 418, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box {
   border-bottom: 1px solid #ebebeb;
   padding-bottom: 20px;
   margin-bottom: 20px;
   padding-top: 15px;
 }
-/* line 425, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li {
   margin-bottom: 5px;
   display: -webkit-box;
@@ -1056,28 +1070,28 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricin
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-/* line 437, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li.total span {
   font-size: 16px;
   font-weight: 500;
   color: red;
 }
-/* line 444, ../sass/style.scss */
+/* line 446, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li span {
   font-size: 14px;
   color: #242424;
   text-transform: capitalize;
 }
-/* line 449, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li span strong {
   color: #cc2121;
   font-weight: 500;
 }
-/* line 458, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-pricing-box ul li:last-child {
   margin-bottom: 0;
 }
-/* line 465, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a {
   color: #fff;
   font-size: 13px;
@@ -1091,15 +1105,15 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 478, ../sass/style.scss */
+/* line 480, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a i {
   padding-right: 5px;
 }
-/* line 484, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a:hover {
   background-color: #cc2121;
 }
-/* line 488, ../sass/style.scss */
+/* line 490, ../sass/style.scss */
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a:last-child {
   margin-bottom: 0;
 }

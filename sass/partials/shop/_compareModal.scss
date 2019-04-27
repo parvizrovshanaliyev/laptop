@@ -1,0 +1,87 @@
+@import 'partials/_mixin';
+@import 'partials/_variables';
+
+
+/*------ compare modal ------*/
+
+#compare {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    #CompareBtn {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: white;
+        background-color: #555;
+        padding: 0.5% 1.5%;
+        border: 1px solid;
+        border-radius: 16%;
+    }
+
+    // #CompareModal{
+
+    // }
+
+    // .modal.down {
+    //     // background-color: rgba(0, 0, 0, 0);
+
+    //     .modal-dialog {
+    //         position: fixed;
+    //         margin: auto;
+    //         width: 100%;
+    //         bottom: 0;
+    //         height: 150px;
+    //         -webkit-transform: translate3d(0%, 0, 0);
+    //         -ms-transform: translate3d(0%, 0, 0);
+    //         -o-transform: translate3d(0%, 0, 0);
+    //         transform: translate3d(0%, 0, 0);
+
+    //         background-color: rgba(0, 0, 0, 0);
+
+    //         @include setTranstions(3s);
+
+    //         .modal-content {
+    //             // height: 150px;
+    //             width: 100%;
+    //             overflow-x: auto;
+
+    //             .modal-body {
+    //                 padding: 15px 15px 80px;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .modal.down.fade {
+    //     .modal-dialog {
+    //         bottom: -150px;
+    //         -webkit-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+    //         -moz-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+    //         -o-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+    //         transition: opacity 0.5s linear, bottom 0.5s ease-out;
+    //     }
+    // }
+
+    // .modal.modal-backdrop.show{
+    //     opacity:0;
+    // }
+    // // .modal-backdrop.show{
+    // //     opacity:0;
+    // // }
+    // // .modal-backdrop.fade{
+    // //     opacity:0;
+    // // }
+    // .modal.down.fade.show .modal-dialog {
+    //     bottom: 0;
+    //     opacity: 1;
+    //     visibility: visible;
+    //     // pointer-events: visible;
+    //     // z-index: 99999999;
+    //     -webkit-animation: slideInUp 1s forwards;
+    //     animation: slideInUp 1s forwards;
+    //     -ms-high-contrast-adjust: none;
+    // }
+}
+
+/*------ compare modal ------*/
