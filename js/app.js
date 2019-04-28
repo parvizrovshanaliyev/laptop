@@ -301,32 +301,32 @@ closeBtn1.on("click",function(){
 
 
   /*--------- quantity change js start ---------*/
-//   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
-//   $('.pro-qty').append('<span class="inc qtybtn">+</span>');
-//   $('.qtybtn').on('click', function () {
-//       var $button = $(this);
-//       var oldValue = $button.parent().find('input').val();
-//       if ($button.hasClass('inc')) {
-//           var newVal = parseFloat(oldValue) + 1;
-//       } else {
-//           // Don't allow decrementing below zero
-//           if (oldValue > 0) {
-//               var newVal = parseFloat(oldValue) - 1;
-//           } else {
-//               newVal = 0;
-//           }
-//       }
-//       $button.parent().find('input').val(newVal);
-// });
-/*--------- quantity change js end ---------*/
-	// /*------- Countdown Activation start -------*/
-	// $('[data-countdown]').each(function () {
-	// 	var $this = $(this),
-	// 		finalDate = $(this).data('countdown');
-	// 	$this.countdown(finalDate, function (event) {
-	// 		$this.html(event.strftime('<div class="single-countdown"><span class="single-countdown__time">%D</span><span class="single-countdown__text">Days</span></div><div class="single-countdown"><span class="single-countdown__time">%H</span><span class="single-countdown__text">Hours</span></div><div class="single-countdown"><span class="single-countdown__time">%M</span><span class="single-countdown__text">Mins</span></div><div class="single-countdown"><span class="single-countdown__time">%S</span><span class="single-countdown__text">Secs</span></div>'));
-	// 	});
-	// });
+  //   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
+  //   $('.pro-qty').append('<span class="inc qtybtn">+</span>');
+  //   $('.qtybtn').on('click', function () {
+  //       var $button = $(this);
+  //       var oldValue = $button.parent().find('input').val();
+  //       if ($button.hasClass('inc')) {
+  //           var newVal = parseFloat(oldValue) + 1;
+  //       } else {
+  //           // Don't allow decrementing below zero
+  //           if (oldValue > 0) {
+  //               var newVal = parseFloat(oldValue) - 1;
+  //           } else {
+  //               newVal = 0;
+  //           }
+  //       }
+  //       $button.parent().find('input').val(newVal);
+  // });
+  /*--------- quantity change js end ---------*/
+  // /*------- Countdown Activation start -------*/
+  // $('[data-countdown]').each(function () {
+  // 	var $this = $(this),
+  // 		finalDate = $(this).data('countdown');
+  // 	$this.countdown(finalDate, function (event) {
+  // 		$this.html(event.strftime('<div class="single-countdown"><span class="single-countdown__time">%D</span><span class="single-countdown__text">Days</span></div><div class="single-countdown"><span class="single-countdown__time">%H</span><span class="single-countdown__text">Hours</span></div><div class="single-countdown"><span class="single-countdown__time">%M</span><span class="single-countdown__text">Mins</span></div><div class="single-countdown"><span class="single-countdown__time">%S</span><span class="single-countdown__text">Secs</span></div>'));
+  // 	});
+  // });
   // /*------- Countdown Activation end -------*/
   
 });
