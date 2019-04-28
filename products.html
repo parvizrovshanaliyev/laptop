@@ -13,6 +13,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <link type="text/css" rel="stylesheet" href="assets/plugin_product_slider/css/lightslider.css" />
+
     <!-- All Vendor & plugins CSS include -->
     <!-- <link href="css/vendor.css" rel="stylesheet"> -->
     <!-- custom css -->
@@ -432,7 +434,7 @@
                    <!-- region products -->
                    <div class="col-lg-9">
                        <div class="row">
-                           <!-- region product single  -->
+                           <!-- #region product single  -->
                            <div class="col-lg-4 col-md-6 mb-4">
                                <div class="card h-100">
                                     <div class="card-header border-0 d-flex">
@@ -466,10 +468,14 @@
                                                <a href="#"><i class="far  fa-heart"></i></a>
                                            </div>
                                            <div class="compare-prod mr-3">
-                                               <a href="#"><i class="fas fa-sync"></i></a>
+                                                <a href="#" data-target=".compare"
+                                                    class="minicart-btn openBtn">
+                                                    <i class="fas fa-sync"></i>
+                                                </a>
+                                               <a href="#"></a>
                                            </div>
                                            <div class="quickView mr-3">
-                                               <a class="showModal" href="#" data-toggle="modal"
+                                               <a class="showModal open-qv" href="#" data-toggle="modal"
                                                    data-target=".quickViewModal"><i class="fas fa-search"></i></a>
                                            </div>
                                            <div class="add-to-card">
@@ -482,6 +488,168 @@
                                </div>
                            </div>
                            <!-- #endregion product single  -->
+                           <!-- #region product single  -->
+                           <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                     <div class="card-header border-0 d-flex">
+                                         <div class="product-label new mr-3">
+                                             <span>new</span>
+                                         </div>
+                                         <div class="product-label discount">
+                                             <span>10%</span>
+                                         </div>
+                                     </div>
+                                    <a href="product-details">
+                                        <img src="assets/img/product/large.jpg" alt="laptop" class="card-img-top">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="product-caption card-text">
+                                             <p class="product-name font-weight-bold">
+                                               <a href="product-details.html">Classic ceramics kitchen ware</a>
+                                             </p>
+                                             <p class="product-name">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque vero molestiae
+                                             </p>
+                                             <div class="price-box">
+                                               <span class="price-regular">$60.00</span>
+                                               <span class="price-old"><del>$70.00</del></span>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="pro-btns d-flex">
+                                            <div class="wish mr-3">
+                                                <a href="#"><i class="far  fa-heart"></i></a>
+                                            </div>
+                                            <div class="compare-prod mr-3">
+                                                 <a href="#" data-target=".compare"
+                                                     class="minicart-btn openBtn">
+                                                     <i class="fas fa-sync"></i>
+                                                 </a>
+                                                <a href="#"></a>
+                                            </div>
+                                            <div class="quickView mr-3">
+                                                <a class="showModal open-qv" href="#" data-toggle="modal"
+                                                    data-target=".quickViewModal"><i class="fas fa-search"></i></a>
+                                            </div>
+                                            <div class="add-to-card">
+                                                 <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn open-card btn btn-cart2">
+                                                    <i class="fa fa-cart-arrow-down"></i>
+                                                 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion product single  -->
+                            <!-- #region product single  -->
+                           <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                     <div class="card-header border-0 d-flex">
+                                         <div class="product-label new mr-3">
+                                             <span>new</span>
+                                         </div>
+                                         <div class="product-label discount">
+                                             <span>10%</span>
+                                         </div>
+                                     </div>
+                                    <a href="product-details">
+                                        <img src="assets/img/product/large.jpg" alt="laptop" class="card-img-top">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="product-caption card-text">
+                                             <p class="product-name font-weight-bold">
+                                               <a href="product-details.html">Classic ceramics kitchen ware</a>
+                                             </p>
+                                             <p class="product-name">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque vero molestiae
+                                             </p>
+                                             <div class="price-box">
+                                               <span class="price-regular">$60.00</span>
+                                               <span class="price-old"><del>$70.00</del></span>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="pro-btns d-flex">
+                                            <div class="wish mr-3">
+                                                <a href="#"><i class="far  fa-heart"></i></a>
+                                            </div>
+                                            <div class="compare-prod mr-3">
+                                                 <a href="#" data-target=".compare"
+                                                     class="minicart-btn openBtn">
+                                                     <i class="fas fa-sync"></i>
+                                                 </a>
+                                                <a href="#"></a>
+                                            </div>
+                                            <div class="quickView mr-3">
+                                                <a class="showModal open-qv" href="#" data-toggle="modal"
+                                                    data-target=".quickViewModal"><i class="fas fa-search"></i></a>
+                                            </div>
+                                            <div class="add-to-card">
+                                                 <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn open-card btn btn-cart2">
+                                                    <i class="fa fa-cart-arrow-down"></i>
+                                                 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion product single  -->
+                            <!-- #region product single  -->
+                           <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                     <div class="card-header border-0 d-flex">
+                                         <div class="product-label new mr-3">
+                                             <span>new</span>
+                                         </div>
+                                         <div class="product-label discount">
+                                             <span>10%</span>
+                                         </div>
+                                     </div>
+                                    <a href="product-details">
+                                        <img src="assets/img/product/large.jpg" alt="laptop" class="card-img-top">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="product-caption card-text">
+                                             <p class="product-name font-weight-bold">
+                                               <a href="product-details.html">Classic ceramics kitchen ware</a>
+                                             </p>
+                                             <p class="product-name">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque vero molestiae
+                                             </p>
+                                             <div class="price-box">
+                                               <span class="price-regular">$60.00</span>
+                                               <span class="price-old"><del>$70.00</del></span>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="pro-btns d-flex">
+                                            <div class="wish mr-3">
+                                                <a href="#"><i class="far  fa-heart"></i></a>
+                                            </div>
+                                            <div class="compare-prod mr-3">
+                                                 <a href="#" data-target=".compare"
+                                                     class="minicart-btn openBtn">
+                                                     <i class="fas fa-sync"></i>
+                                                 </a>
+                                                <a href="#"></a>
+                                            </div>
+                                            <div class="quickView mr-3">
+                                                <a class="showModal open-qv" href="#" data-toggle="modal"
+                                                    data-target=".quickViewModal"><i class="fas fa-search"></i></a>
+                                            </div>
+                                            <div class="add-to-card">
+                                                 <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn open-card btn btn-cart2">
+                                                    <i class="fa fa-cart-arrow-down"></i>
+                                                 </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- #endregion product single  -->
                        </div>
                    </div>
                    <!-- #region products -->                   
@@ -667,6 +835,93 @@
         </div>
         <!-- #endregion compare -->
 
+    <!-- region Quick view modal start -->
+      <div class="modal section-space fade quickViewModal" tabindex="-1" role="dialog"
+      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div style="max-width: 1100px;" class="modal-dialog modal-lg">
+        <div class="modal-content p-5">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Quick view product slider -->
+                <div class="col-md-6">
+                  <ul id="vertical">
+                    <li data-thumb="assets/img/product/large.jpg">
+                      <img src="assets/img/product/large.jpg" alt="laptop">
+                    </li>
+                    <li data-thumb="assets/img/product/large.jpg">
+                      <img src="assets/img/product/large.jpg" alt="laptop">
+                    </li>
+                    <li data-thumb="assets/img/product/large.jpg">
+                      <img src="assets/img/product/large.jpg" alt="laptop">
+                    </li>
+                  </ul>
+                </div>
+                <!-- Quick view product slider -->
+                <!-- Quick view Product Details -->
+                <div class="col-md-5">
+                  <div class="product-details-des quick-details">
+                    <div class="manufacturer-name">
+                      <a href="product-details.html">HasTech</a>
+                    </div>
+                    <h3 class="product-name pt-3 pb-3">Dozen White Botanical </h3>
+                    <p class="pro-desc">Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit
+                      amet, </p>
+                    <ul>
+                      <li>
+
+                      </li>
+                      <li>
+                        <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
+                      </li>
+                      <li>
+                        <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
+                      </li>
+                      <li>
+                        <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
+                      </li>
+                      <li>
+                        <p class="pro-desc">Lorem ipsum dolor sit amet, </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Quick view Product Details -->
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="price-box">
+              <span class="price-regular">$70.00</span>
+              <span class="price-old"><del>$90.00</del></span>
+            </div>
+            <div class="quantity-cart-box d-flex align-items-center">
+              <div class="action_link">
+                <!-- <a class="btn btn-cart2" href="#">Add to cart</a> -->
+                <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn open-card btn btn-cart2">
+                        Add to cart
+                </a>
+              </div>
+            </div>
+            <div class="useful-links">
+                    <a href="#" data-target=".compare" class="minicart-btn openBtn">
+                            <i class="fas fa-sync"></i>compare
+                        </a>
+              <!-- <a href="#" data-toggle="tooltip" title="" data-original-title="Compare"><i
+                  class="fas fa-sync"></i>compare</a> -->
+              <a href="#" data-toggle="tooltip" title="" data-original-title="Wishlist"><i
+                  class="far fa-heart"></i>wishlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion  Quick view modal end -->
     </main>
     <!--#endregion main wrapper start -->
 

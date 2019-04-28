@@ -259,6 +259,10 @@ $(document).ready(function() {
       modalc.addClass("show");
       e.preventDefault();
     }, 100)
+    if(modalQV.hasClass("show") || modal1.hasClass("show") ){
+      modalQV.removeClass("show");
+      modal1.removeClass("show");
+    }
     // modal.style.display="block";
   });
   closeBtn.on("click", function() {
@@ -267,28 +271,53 @@ $(document).ready(function() {
     // alert("salam");
   });
 
-  // $(window).on("click",function(e){
-  //   // e.preventDefault();
-  //   var target = $(this.event.target).parent().parent();
-  //   if(target.html() != modalc.html()){
-  //     modalc.removeClass("show");
-  //   }
-  // });
+  $(window).on("click",function(){
+    // e.preventDefault();
+    var target = $(this.event.target).parent().parent();
+    if(target.html() != modalc.html()){
+      modalc.removeClass("show");
+    }
+  });
 
   //#endregion
 
-  // #region minicard modal
+  // region minicard modal
+  // let closeBtn1 = $(".close-card");
   let modal1 = $("#MiniCard");
   let openBtn1 = $(".open-card");
-  let closeBtn1 = $(".close-card");
-
+   // region quick view modal
+   let modalQV=$(".quickViewModal");
+   let openqv = $(".open-qv");
   openBtn1.on("click", function(e) {
     e.preventDefault();
     if (modalc.hasClass("show")) {
       modalc.removeClass("show");
       
+      // modalQV.removeClass("show");
+      
+      
     }
+    // else if(modalQV.hasClass("show")){
+    //   modalQV.removeClass("show");
+      
+    // }
   });
+ 
+  
+
+ 
+  openqv.on("click",function(e){
+
+    e.preventDefault();
+    if(modalc.hasClass("show")){
+
+      modalc.removeClass("show");
+    }
+
+
+  });
+
+
   // closeBtn1.on("click", function() {
   //   modal1.removeClass("show");
   // });
