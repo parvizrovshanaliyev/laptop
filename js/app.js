@@ -38,6 +38,22 @@ $(document).ready(function() {
   });
   //  #endregion Sticky menu start
 
+
+ 
+  // #region navbar active item
+
+  // $(".desktop-menu ul li a").click(function(){
+
+    
+   
+  //   $('a').parent().removeClass('active');
+
+  //   $(this).parent().addClass('active');
+    
+  // });
+  // #endregion navbar active item
+
+
   /*------  slider trending active start ------*/
   // var slider = $("#lightSlider").lightSlider();
   //   slider.goToSlide(3);
@@ -235,19 +251,29 @@ $(document).ready(function() {
   // #endregion quick view modal slider ------*/
 
   //#region Compare modal
-  let modal = $(".compare");
+  let modalc = $(".compare");
   let openBtn = $(".openBtn");
   let closeBtn = $(".close");
   openBtn.on("click", function(e) {
-    e.preventDefault();
-    modal.addClass("show");
+    setTimeout(function(){
+      modalc.addClass("show");
+      e.preventDefault();
+    }, 100)
     // modal.style.display="block";
   });
   closeBtn.on("click", function() {
-    modal.removeClass("show");
+    modalc.removeClass("show");
     // modal.style.display="none";
     // alert("salam");
   });
+
+  // $(window).on("click",function(e){
+  //   // e.preventDefault();
+  //   var target = $(this.event.target).parent().parent();
+  //   if(target.html() != modalc.html()){
+  //     modalc.removeClass("show");
+  //   }
+  // });
 
   //#endregion
 
@@ -258,18 +284,20 @@ $(document).ready(function() {
 
   openBtn1.on("click", function(e) {
     e.preventDefault();
-    if (modal.hasClass("show")) {
-      modal.removeClass("show");
-      modal1.addClass("show");
-    } else {
-      modal1.addClass("show");
+    if (modalc.hasClass("show")) {
+      modalc.removeClass("show");
+      
     }
   });
-  closeBtn1.on("click", function() {
-    modal1.removeClass("show");
-  });
+  // closeBtn1.on("click", function() {
+  //   modal1.removeClass("show");
+  // });
   //#endregion
 
+
+
+
+  
   /*--------- quantity change js start ---------*/
   //   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
   //   $('.pro-qty').append('<span class="inc qtybtn">+</span>');
