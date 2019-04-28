@@ -739,11 +739,6 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   animation: slideInUp 1s forwards;
 }
 
-/* line 73, ../sass/partials/shop/_compareModal.scss */
-.compare .modal-header .close:focus {
-  outline: 0;
-}
-
 /*------ compare modal ------*/
 /* line 7, ../sass/style.scss */
 body {

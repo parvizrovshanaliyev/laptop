@@ -1,6 +1,6 @@
 $(document).ready(function() {
   console.log("ssss");
-  //  #region Sticky menu start 
+  //  #region Sticky menu start
   var $window = $(window);
   $window.on("scroll", function() {
     var scroll = $window.scrollTop();
@@ -48,10 +48,9 @@ $(document).ready(function() {
   //   slider.play();
   //   slider.pause();
 
-
   /*------  slider active end ------*/
 
- // #region section tabs new sale trending ------
+  // #region section tabs new sale trending ------
   $(".js-tabs-link").aniTabs({
     animation: "slide",
 
@@ -220,85 +219,56 @@ $(document).ready(function() {
     onBeforePrevSlide: function(el) {}
   });
   /*------  sale product  ------*/
- // #endregion section tabs new sale trending ------
-  
+  // #endregion section tabs new sale trending ------
 
- // #region quick view modal slider 
-    $('#vertical').lightSlider({
-      gallery:true,
-      item:1,
-      vertical:true,
-      verticalHeight:295,
-      vThumbWidth:50,
-      thumbItem:8,
-      thumbMargin:4,
-      slideMargin:0
-    }); 
+  // #region quick view modal slider
+  $("#vertical").lightSlider({
+    gallery: true,
+    item: 1,
+    vertical: true,
+    verticalHeight: 295,
+    vThumbWidth: 50,
+    thumbItem: 8,
+    thumbMargin: 4,
+    slideMargin: 0
+  });
   // #endregion quick view modal slider ------*/
-  
-//#region Compare modal
-let modal = $('.compare');
-let openBtn=$(".openBtn");
-let closeBtn=$(".close");
-openBtn.on("click",function(e){
-e.preventDefault();
-modal.addClass("show");
-// modal.style.display="block";
-});
-closeBtn.on("click",function(){
-  modal.removeClass("show");
-  // modal.style.display="none"; 
-  // alert("salam");
-});
 
-//#endregion
-
-//#region minicard modal
-let modal1=$("#MiniCard");
-let openBtn1=$(".open-card");
-let closeBtn1=$(".close-card");
-
-openBtn1.on("click",function(e){
-e.preventDefault();
-if(modal.hasClass("show")){
-  modal.removeClass("show");
- modal1.addClass("show");
-
-}else{
- modal1.addClass("show");
-
-}
-});
-closeBtn1.on("click",function(){
-  
-
-  modal1.removeClass("show");
+  //#region Compare modal
+  let modal = $(".compare");
+  let openBtn = $(".openBtn");
+  let closeBtn = $(".close");
+  openBtn.on("click", function(e) {
+    e.preventDefault();
+    modal.addClass("show");
+    // modal.style.display="block";
+  });
+  closeBtn.on("click", function() {
+    modal.removeClass("show");
+    // modal.style.display="none";
+    // alert("salam");
   });
 
-  // window.onclick=function(event){
-  //   // if(event.target == modal1 && modal1.hasClass("show")){
-  //   //   // modal1.removeClass("show");
-  //   //   
-  //   // }
-  //   console.log("s");
-  // };
-  var $window = $(window);
-  $window.on('click', function (event) {
-		console.log(event);
-		
-	});
-//#endregion
-  
+  //#endregion
 
+  // #region minicard modal
+  let modal1 = $(".miniCard");
+  let openBtn1 = $(".open-card");
+  let closeBtn1 = $(".close-card");
 
-
-
-
-
-
-
-
-
+  openBtn1.on("click", function(e) {
+    e.preventDefault();
+    if (modal.hasClass("show")) {
+      modal.removeClass("show");
+      modal1.addClass("show");
+    } else {
+      modal1.addClass("show");
+    }
+  });
+  closeBtn1.on("click", function() {
+    modal1.removeClass("show");
+  });
+  //#endregion
 
   /*--------- quantity change js start ---------*/
   //   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
@@ -328,5 +298,4 @@ closeBtn1.on("click",function(){
   // 	});
   // });
   // /*------- Countdown Activation end -------*/
-  
 });
