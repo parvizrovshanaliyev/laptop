@@ -252,7 +252,7 @@ $(document).ready(function() {
   //#endregion
 
   // #region minicard modal
-  let modal1 = $(".miniCard");
+  let modal1 = $("#MiniCard");
   let openBtn1 = $(".open-card");
   let closeBtn1 = $(".close-card");
 
