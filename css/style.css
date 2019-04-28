@@ -872,6 +872,33 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   text-transform: capitalize;
 }
 
+/* line 5, ../sass/partials/shop/_Product_Categories.scss */
+.shop .card .card-header .product-label {
+  background: #cc2121;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  min-width: 46px;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+}
+/* line 21, ../sass/partials/shop/_Product_Categories.scss */
+.shop .card .card-header .discount {
+  background-color: #242424;
+}
+/* line 27, ../sass/partials/shop/_Product_Categories.scss */
+.shop .card .card-footer .pro-btns a {
+  font-size: 20px;
+}
+/* line 33, ../sass/partials/shop/_Product_Categories.scss */
+.shop .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+  padding: 0px 43px;
+}
+
 /* line 7, ../sass/style.scss */
 body {
   font-size: 14px;

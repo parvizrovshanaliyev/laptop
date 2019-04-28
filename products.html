@@ -13,6 +13,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <!-- All Vendor & plugins CSS include -->
+    <!-- <link href="css/vendor.css" rel="stylesheet"> -->
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
@@ -390,6 +392,7 @@
 
     <!--region main wrapper start -->
     <main>
+        
         <!-- #region static banner -->
         <section style=" background-color: rgb(15, 14, 14,0.1234);">
             <div class="breadcrumb-area common-bg">
@@ -412,9 +415,83 @@
             </div>
         </section>
         <!-- #endregion banner-->
+        <!-- region shop -->
+        <section class="section-space shop">
+           <div class="container">
+               <div class="row">
+                   <!-- #region categories -->
+                   <div class="col-lg-3">
+                       <div class="list-group">
+                            <a href="#" class="list-group-item">Category 1</a> 
+                            <a href="#" class="list-group-item">Category 1</a> 
+                            <a href="#" class="list-group-item">Category 1</a> 
+                       </div>
+                   </div>
+                   <!-- #endregion categories -->
+
+                   <!-- region products -->
+                   <div class="col-lg-9">
+                       <div class="row">
+                           <!-- region product single  -->
+                           <div class="col-lg-4 col-md-6 mb-4">
+                               <div class="card h-100">
+                                    <div class="card-header border-0 d-flex">
+                                        <div class="product-label new mr-3">
+                                            <span>new</span>
+                                        </div>
+                                        <div class="product-label discount">
+                                            <span>10%</span>
+                                        </div>
+                                    </div>
+                                   <a href="product-details">
+                                       <img src="assets/img/product/large.jpg" alt="laptop" class="card-img-top">
+                                   </a>
+                                   <div class="card-body">
+                                       <div class="product-caption card-text">
+                                            <p class="product-name font-weight-bold">
+                                              <a href="product-details.html">Classic ceramics kitchen ware</a>
+                                            </p>
+                                            <p class="product-name">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque vero molestiae
+                                            </p>
+                                            <div class="price-box">
+                                              <span class="price-regular">$60.00</span>
+                                              <span class="price-old"><del>$70.00</del></span>
+                                            </div>
+                                       </div>
+                                   </div>
+                                   <div class="card-footer">
+                                       <div class="pro-btns d-flex">
+                                           <div class="wish mr-3">
+                                               <a href="#"><i class="far  fa-heart"></i></a>
+                                           </div>
+                                           <div class="compare-prod mr-3">
+                                               <a href="#"><i class="fas fa-sync"></i></a>
+                                           </div>
+                                           <div class="quickView mr-3">
+                                               <a class="showModal" href="#" data-toggle="modal"
+                                                   data-target=".quickViewModal"><i class="fas fa-search"></i></a>
+                                           </div>
+                                           <div class="add-to-card">
+                                                <a href="#" data-toggle="modal" data-target="#MiniCard" class="minicart-btn open-card btn btn-cart2">
+                                                   <i class="fa fa-cart-arrow-down"></i>
+                                                </a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- #endregion product single  -->
+                       </div>
+                   </div>
+                   <!-- #region products -->                   
+               </div>
+           </div>
+        </section>
+        <!-- #endregion shop -->
         <!-- #region compare modal -->
         <!-- #endregion compare -->
-        <!-- region compare modal -->
+        <!-- #region compare modal -->
         <a href="#" data-target=".compare" class="minicart-btn openBtn compareOpen">
             <i class="fas fa-chevron-up">
                 <span class="tooltip-text">Compare</span>
@@ -589,8 +666,10 @@
             </div> -->
         </div>
         <!-- #endregion compare -->
+
     </main>
     <!--#endregion main wrapper start -->
+
 
     <!-- main end -->
     <!-- Optional JavaScript -->
