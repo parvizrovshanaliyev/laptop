@@ -696,7 +696,32 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 }
 /* line 33, ../sass/partials/shop/_Product_Categories.scss */
 .card .card-footer .pro-btns .add-to-card .btn-cart2 {
-  padding: 0px 43px;
+  padding: 0px 5px;
+}
+@media only screen and (min-width: 1199.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 121px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 121px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    padding: 0 10px;
+    margin-left: 72px;
+  }
+}
+@media only screen and (min-width: 575.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 5px;
+  }
 }
 
 /*------ compare modal ------*/
@@ -923,7 +948,32 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 }
 /* line 33, ../sass/partials/shop/_Product_Categories.scss */
 .card .card-footer .pro-btns .add-to-card .btn-cart2 {
-  padding: 0px 43px;
+  padding: 0px 5px;
+}
+@media only screen and (min-width: 1199.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 121px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 121px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    padding: 0 10px;
+    margin-left: 72px;
+  }
+}
+@media only screen and (min-width: 575.98px) {
+  /* line 33, ../sass/partials/shop/_Product_Categories.scss */
+  .card .card-footer .pro-btns .add-to-card .btn-cart2 {
+    margin-left: 5px;
+  }
 }
 
 /* line 7, ../sass/style.scss */
