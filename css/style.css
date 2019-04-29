@@ -724,6 +724,20 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   }
 }
 
+/* line 1, ../sass/partials/_blog.scss */
+.btn-hero {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 18px 36px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #242424;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
 /*------ compare modal ------*/
 /* line 8, ../sass/partials/shop/_compareModal.scss */
 .compareOpen {
