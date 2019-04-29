@@ -293,6 +293,220 @@
 }
 
 /*------ contact info area end -------*/
+/*--------- Cart Page Wrapper Start ---------*/
+.cart-table .table {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cart-table .table thead {
+  background-color: #cc2121;
+}
+
+.cart-table .table thead tr th {
+  border-color: #cc2121;
+  border-bottom: 0 solid transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cart-table .table tbody tr td {
+  border-color: #ccc;
+  text-align: center;
+  padding: 10px 20px;
+  vertical-align: middle;
+  font-weight: 500;
+  color: #242424;
+}
+
+.cart-table .table tbody tr td a {
+  color: #242424;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.cart-table .table tbody tr td a:hover {
+  color: #cc2121;
+}
+
+.cart-table .table tbody tr td a.btn {
+  color: #fff;
+}
+
+.cart-table .table tbody tr td a.btn:hover {
+  color: #fff;
+}
+
+.cart-table .table tbody tr td a.check-btn {
+  color: #fff;
+}
+
+.cart-table .table tr .pro-thumbnail,
+.cart-table .table tr .pro-price,
+.cart-table .table tr .pro-quantity,
+.cart-table .table tr .pro-subtotal,
+.cart-table .table tr .pro-remove {
+  width: 140px;
+}
+
+.cart-table .table tr .pro-qty {
+  width: 90px;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding: 0 15px;
+  float: left;
+}
+
+.cart-table .table tr .pro-qty .qtybtn {
+  width: 15px;
+  display: block;
+  float: left;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+}
+
+.cart-table .table tr .pro-qty input {
+  width: 28px;
+  float: left;
+  border: none;
+  height: 40px;
+  line-height: 34px;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.cart-update-option {
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  padding: 15px 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px), only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .cart-update-option {
+    margin-top: 0;
+    border-top: 0 solid transparent;
+  }
+}
+
+.cart-update-option .apply-coupon-wrapper {
+  width: 55%;
+}
+
+@media only screen and (max-width: 767.98px), only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .cart-update-option .apply-coupon-wrapper {
+    width: auto;
+  }
+}
+
+.cart-update-option .apply-coupon-wrapper form {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.cart-update-option .apply-coupon-wrapper form input {
+  border: 1px solid #ccc;
+  font-size: 14px;
+  padding: 9px 10px;
+  outline: none;
+  margin-right: 15px;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.cart-update-option .apply-coupon-wrapper form input:focus,
+.cart-update-option .apply-coupon-wrapper form input:active {
+  border-color: #cc2121;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .cart-update-option .apply-coupon-wrapper button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .cart-update-option .cart-update {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .cart-update-option .cart-update .btn {
+    width: 100%;
+  }
+}
+
+.cart-calculator-wrapper {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+}
+
+.cart-calculator-wrapper h3 {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 27px 15px 25px;
+  margin-bottom: 0;
+}
+
+.cart-calculator-wrapper .cart-calculate-items {
+  font-weight: 500;
+}
+
+.cart-calculator-wrapper .cart-calculate-items .table {
+  margin-bottom: 0;
+}
+
+.cart-calculator-wrapper .cart-calculate-items .table tr td {
+  color: #242424;
+  padding: 15px 20px;
+}
+
+.cart-calculator-wrapper .cart-calculate-items .table tr td:nth-child(2) {
+  color: #242424;
+  text-align: right;
+}
+
+.cart-calculator-wrapper .cart-calculate-items .table tr td.total-amount {
+  color: #cc2121;
+  font-weight: 700;
+}
+
+.cart-calculator-wrapper a {
+  border-radius: 0;
+  text-align: center;
+}
+
+/*--------- Cart Page Wrapper end ---------*/
 /*-------- footer top area start --------*/
 .footer-top {
     padding: 40px 0px;
