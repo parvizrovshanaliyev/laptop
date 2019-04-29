@@ -1,5 +1,8 @@
+
 $(document).ready(function() {
   console.log("ssss");
+  // slider plugin
+  // jQuery('selector').slippry();
   //  #region Sticky menu start
   var $window = $(window);
   $window.on("scroll", function() {
