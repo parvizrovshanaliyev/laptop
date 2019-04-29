@@ -1,6 +1,37 @@
 
 $(document).ready(function() {
   console.log("ssss");
+   // region scroll page 
+	$(window).on("scroll", function() {
+    if ($(this).scrollTop() > 600) {
+      $(".scroll-top").removeClass("not-visible");
+    } else {
+      $(".scroll-top").addClass("not-visible");
+    }
+  });
+  $(".scroll_To_Top").click(function(e) {
+    e.preventDefault();
+    console.log($("html, body"));
+    $("html,body").slideUp({
+      scrollTop: 0
+    });
+  });
+	// $('.scroll-top').on('click', function (e) {
+  //   e.preventDefault();
+
+  //   $('html, body').animate(
+  //     {
+  //       scrollTop: $($(this).attr('href')).offset().top,
+  //     },
+  //     500,
+  //     'linear'
+  //   )
+  //   // $('html,body').scrollTop(0);
+  //   // // animate({
+	// 	// // 	scrollTop: 0
+	// 	// // }, 1000);
+	// });
+	// #endregion scroll page
   // slider plugin
   // jQuery('selector').slippry();
   //  #region Sticky menu start
