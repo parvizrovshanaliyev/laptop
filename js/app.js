@@ -38,21 +38,16 @@ $(document).ready(function() {
   });
   //  #endregion Sticky menu start
 
-
- 
   // #region navbar active item
 
   // $(".desktop-menu ul li a").click(function(){
 
-    
-   
   //   $('a').parent().removeClass('active');
 
   //   $(this).parent().addClass('active');
-    
+
   // });
   // #endregion navbar active item
-
 
   /*------  slider trending active start ------*/
   // var slider = $("#lightSlider").lightSlider();
@@ -238,95 +233,106 @@ $(document).ready(function() {
   // #endregion section tabs new sale trending ------
 
   // #region quick view modal slider
-  $("#vertical").lightSlider({
-    gallery: true,
-    item: 1,
-    vertical: true,
-    verticalHeight: 295,
-    vThumbWidth: 50,
-    thumbItem: 8,
-    thumbMargin: 4,
-    slideMargin: 0
-  });
+ 
+    $('#imageGallery').lightSlider({
+        gallery:true,
+        item:1,
+        loop:true,
+        thumbItem:9,
+        slideMargin:0,
+        enableDrag: false,
+        currentPagerPosition:'left',
+        
+        // onSliderLoad: function(el) {
+        //     el.lightGallery({
+        //         selector: '#imageGallery .lslide'
+        //     });
+        // }   
+    });  
+  
   // #endregion quick view modal slider ------*/
 
-  //#region Compare modal
-  let modalc = $(".compare");
-  let openBtn = $(".openBtn");
-  let closeBtn = $(".close");
-  openBtn.on("click", function(e) {
-    setTimeout(function(){
-      modalc.addClass("show");
-      e.preventDefault();
-    }, 100)
-    if(modalQV.hasClass("show") || modal1.hasClass("show") ){
-      modalQV.removeClass("show");
-      modal1.removeClass("show");
-    }
-    // modal.style.display="block";
+  //region Compare modal
+  let modalCompare = $(".compare");
+  let openCompare = $(".openBtn");
+  let closeCompare = $(".close");
+
+  // card modal
+  // let closeBtn1 = $(".close-card");
+  let madalCard = $("#MiniCard");
+  let openCard = $(".open-card");
+
+  // region quick view modal
+  let madalQuickView = $(".quickViewModal");
+  let openQuickV = $(".open-qv");
+
+
+  //  region open close conditions for modals
+
+  //when compare modal open button
+  openCompare.on("click", function(e) {
+    e.preventDefault();
+    modalCompare.addClass("show");
+    // setTimeout(function() {
+    //   modalCompare.addClass("show");
+    //   e.preventDefault();
+    // }, 100);
+    // if (madalQuickView.hasClass("show") || madalCard.hasClass("show")) {
+    //   madalQuickView.removeClass("show");
+    //   madalCard.removeClass("show");
+    // }
+
   });
-  closeBtn.on("click", function() {
-    modalc.removeClass("show");
-    // modal.style.display="none";
-    // alert("salam");
+   //when compare modal close button
+   closeCompare.on("click", function() {
+    modalCompare.removeClass("show");
+
   });
 
-  $(window).on("click",function(){
-    // e.preventDefault();
-    var target = $(this.event.target).parent().parent();
-    if(target.html() != modalc.html()){
-      modalc.removeClass("show");
-    }
-  });
+  //when window clcik modal compare close
+  // $(window).on("click", function() {
+  //   // e.preventDefault();
+  //   var target = $(this.event.target)
+  //     .parent()
+  //     .parent();
+  //   if (target.html() != modalCompare.html()) {
+  //     modalCompare.removeClass("show");
+  //   }
+  // });
 
   //#endregion
 
-  // region minicard modal
-  // let closeBtn1 = $(".close-card");
-  let modal1 = $("#MiniCard");
-  let openBtn1 = $(".open-card");
-   // region quick view modal
-   let modalQV=$(".quickViewModal");
-   let openqv = $(".open-qv");
-  openBtn1.on("click", function(e) {
+  // open card modal
+  openCard.on("click", function(e) {
     e.preventDefault();
-    if (modalc.hasClass("show")) {
-      modalc.removeClass("show");
-      
-      // modalQV.removeClass("show");
-      
-      
+    if (modalCompare.hasClass("show")) {
+      modalCompare.removeClass("show");
+
+      // madalQuickView.removeClass("show");
     }
-    // else if(modalQV.hasClass("show")){
-    //   modalQV.removeClass("show");
-      
+    // else if(madalQuickView.hasClass("show")){
+    //   madalQuickView.removeClass("show");
+
     // }
   });
- 
-  
 
  
-  openqv.on("click",function(e){
-
-    e.preventDefault();
-    if(modalc.hasClass("show")){
-
-      modalc.removeClass("show");
-    }
-
-
-  });
-
-
   // closeBtn1.on("click", function() {
-  //   modal1.removeClass("show");
+  //   madalCard.removeClass("show");
   // });
   //#endregion
 
+  //when quick view open close compare modal
+  openQuickV.on("click", function(e) {
+    e.preventDefault();
+    if (modalCompare.hasClass("show")) {
+      modalCompare.removeClass("show");
 
+      
+    }
+    
+  });
 
-
-  
   /*--------- quantity change js start ---------*/
   //   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
   //   $('.pro-qty').append('<span class="inc qtybtn">+</span>');
