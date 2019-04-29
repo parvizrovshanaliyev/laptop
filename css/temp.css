@@ -143,6 +143,156 @@
 
 /*------ shop categories area end ------*/
 /*----- shop Sidebar end -----*/
+
+
+/*------ contact form area start -------*/
+.contact-area {
+  margin-top: -4px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px), only screen and (max-width: 767.98px) {
+  .contact-area {
+    margin-bottom: -5px;
+  }
+}
+
+.contact-message h2 {
+  color: #242424;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 28px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .contact-message h2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+.contact-message form input,
+.contact-message form textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  border-bottom: 3px solid transparent;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.contact-message form textarea {
+  height: 150px;
+}
+
+/*------ contact form area start -------*/
+/*------ contact info area start -------*/
+.contact-info {
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-info {
+    margin-top: 77px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .contact-info {
+    margin-top: 60px;
+  }
+}
+
+.contact-info h2 {
+  color: #242424;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 22px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .contact-info h2 {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+}
+
+.contact-info p {
+  color: #555;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact-info p {
+    padding-bottom: 10px;
+  }
+}
+
+.contact-info ul li {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 479.98px) {
+  .contact-info ul li {
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+.contact-info ul li:last-child {
+  border-bottom: none;
+}
+
+.contact-info ul li i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.contact-info .working-time h3 {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.contact-info .working-time p {
+  padding-bottom: 0;
+}
+
+.contact-info .working-time p span {
+  color: #242424;
+  padding-right: 10px;
+}
+
+.btn__bg {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 0;
+  background-color: #CC2121;
+}
+
+.btn__bg:hover {
+  color: #fff;
+  background-color: #555;
+}
+
+/*------ contact info area end -------*/
 /*-------- footer top area start --------*/
 .footer-top {
     padding: 40px 0px;
