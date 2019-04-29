@@ -1,3 +1,148 @@
+/*------ pricing filter slider start ------*/
+.price-range-wrap {
+  padding-top: 8px;
+}
+
+.price-range-wrap .price-range {
+  border-radius: 0;
+  margin-right: 13px;
+  margin-bottom: 20px;
+}
+
+.price-range-wrap .price-range.ui-widget-content {
+  border: none;
+  background: #eeeeee;
+  height: 6px;
+  border-radius: 20px;
+}
+
+.price-range-wrap .price-range.ui-widget-content .ui-slider-range {
+  background-color: #cc2121;
+  border-radius: 0;
+}
+
+.price-range-wrap .price-range.ui-widget-content .ui-slider-handle {
+  border: none;
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+  outline: none;
+  cursor: ew-resize;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+.price-range-wrap .price-range.ui-widget-content .ui-slider-handle:before {
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #cc2121;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.price-range-wrap .range-slider {
+  color: #242424;
+  margin-top: 30px;
+}
+
+.price-range-wrap .range-slider .price-input label {
+  color: #242424;
+  margin-bottom: 0;
+}
+
+.price-range-wrap .range-slider .price-input input {
+  color: #555;
+  border: none;
+  outline: none;
+  max-width: 80px;
+  pointer-events: none;
+}
+
+.price-range-wrap .range-slider button.filter-btn {
+  border: none;
+  color: #242424;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 4px 15px;
+  border-radius: 3px;
+  background-color: #ebebeb;
+}
+
+.price-range-wrap .range-slider button.filter-btn:hover {
+  color: #fff;
+  background-color: #cc2121;
+}
+
+/*------ pricing filter slider end ------*/
+.categories-list li {
+  color: #555;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.categories-list li:last-child {
+  margin-bottom: 0;
+}
+
+.categories-list li:hover {
+  color: #cc2121;
+}
+
+/*------ shop categories area start ------*/
+.shop-categories {
+  margin-top: -4px;
+}
+
+.shop-categories li a {
+  color: #555;
+  display: block;
+  padding: 6px 0;
+  text-transform: capitalize;
+}
+
+.shop-categories li a span {
+  float: right;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: -3px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.shop-categories li:first-child a {
+  padding-top: 0;
+}
+
+.shop-categories li:last-child a {
+  padding-bottom: 0;
+}
+
+.shop-categories li:hover a {
+  color: #cc2121;
+}
+
+.shop-categories li:hover a span {
+  color: #fff;
+  background-color: #cc2121;
+}
+
+/*------ shop categories area end ------*/
+/*----- shop Sidebar end -----*/
 /*-------- footer top area start --------*/
 .footer-top {
     padding: 40px 0px;
