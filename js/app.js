@@ -1,40 +1,17 @@
+/*------------------------------------------------------------------
+Table of content
+-------------------
+1.  Navbar window scroll Sticky menu start
+2.  navbar active item
+3.  section tabs new sale trending
+4.  quick view modal inner slider
+5.  modals: compare , quick view , mini card
 
+-------------------------------------------------------------------*/
 $(document).ready(function() {
   console.log("ssss");
-   // region scroll page 
-	$(window).on("scroll", function() {
-    if ($(this).scrollTop() > 600) {
-      $(".scroll-top").removeClass("not-visible");
-    } else {
-      $(".scroll-top").addClass("not-visible");
-    }
-  });
-  $(".scroll_To_Top").click(function(e) {
-    e.preventDefault();
-    console.log($("html, body"));
-    $("html,body").slideUp({
-      scrollTop: 0
-    });
-  });
-	// $('.scroll-top').on('click', function (e) {
-  //   e.preventDefault();
-
-  //   $('html, body').animate(
-  //     {
-  //       scrollTop: $($(this).attr('href')).offset().top,
-  //     },
-  //     500,
-  //     'linear'
-  //   )
-  //   // $('html,body').scrollTop(0);
-  //   // // animate({
-	// 	// // 	scrollTop: 0
-	// 	// // }, 1000);
-	// });
-	// #endregion scroll page
-  // slider plugin
-  // jQuery('selector').slippry();
-  //  #region Sticky menu start
+  
+  //  #region 1. Navbar window scroll Sticky menu start
   var $window = $(window);
   $window.on("scroll", function() {
     var scroll = $window.scrollTop();
@@ -72,7 +49,7 @@ $(document).ready(function() {
   });
   //  #endregion Sticky menu start
 
-  // #region navbar active item
+  // #region 2.navbar active item
 
   // $(".desktop-menu ul li a").click(function(){
 
@@ -83,19 +60,7 @@ $(document).ready(function() {
   // });
   // #endregion navbar active item
 
-  /*------  slider trending active start ------*/
-  // var slider = $("#lightSlider").lightSlider();
-  //   slider.goToSlide(3);
-  //   slider.goToPrevSlide();
-  //   slider.goToNextSlide();
-  //   slider.getCurrentSlideCount(4);
-  //   slider.refresh();
-  //   slider.play();
-  //   slider.pause();
-
-  /*------  slider active end ------*/
-
-  // #region section tabs new sale trending ------
+  // #region 3.section tabs new sale trending 
   $(".js-tabs-link").aniTabs({
     animation: "slide",
 
@@ -103,7 +68,7 @@ $(document).ready(function() {
     animationSpeed: 1000,
     autoHeight: false
   });
-  /*------  trending product  ------*/
+  // #region  trending product  
   $("#lightSlider").lightSlider({
     item: 3,
     autoWidth: false,
@@ -155,9 +120,9 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  trending product  ------*/
+ // #endregion trending product 
 
-  /*------  news product  ------*/
+ // #region  sale product  
   $("#lightSlider2").lightSlider({
     item: 3,
     autoWidth: false,
@@ -209,9 +174,9 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  news product  ------*/
+ // #endregion sale product 
 
-  /*------  sale product  ------*/
+ // #region  new product  
   $("#lightSlider3").lightSlider({
     item: 3,
     autoWidth: false,
@@ -263,10 +228,11 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
-  /*------  sale product  ------*/
+ // #endregion new product 
+
   // #endregion section tabs new sale trending ------
 
-  // #region quick view modal slider
+  // #region 4.quick view modal slider
  
     $('#imageGallery').lightSlider({
         gallery:true,
@@ -276,17 +242,13 @@ $(document).ready(function() {
         slideMargin:0,
         enableDrag: false,
         currentPagerPosition:'left',
-        
-        // onSliderLoad: function(el) {
-        //     el.lightGallery({
-        //         selector: '#imageGallery .lslide'
-        //     });
-        // }   
+         
     });  
   
-  // #endregion quick view modal slider ------*/
-
-  //region Compare modal
+  // #endregion quick view modal inner slider 
+  
+  // #region 5.modals: compare , quick view , mini card 
+  // Compare modal
   let modalCompare = $(".compare");
   let openCompare = $(".openBtn");
   let closeCompare = $(".close");
@@ -296,12 +258,12 @@ $(document).ready(function() {
   let madalCard = $("#MiniCard");
   let openCard = $(".open-card");
 
-  // region quick view modal
+  //  quick view modal
   let madalQuickView = $(".quickViewModal");
   let openQuickV = $(".open-qv");
 
 
-  //  region open close conditions for modals
+  //open close conditions for modals
 
   //when compare modal open button
   openCompare.on("click", function(e) {
@@ -334,8 +296,6 @@ $(document).ready(function() {
   //   }
   // });
 
-  //#endregion
-
   // open card modal
   openCard.on("click", function(e) {
     e.preventDefault();
@@ -354,7 +314,7 @@ $(document).ready(function() {
   // closeBtn1.on("click", function() {
   //   madalCard.removeClass("show");
   // });
-  //#endregion
+  
 
   //when quick view open close compare modal
   openQuickV.on("click", function(e) {
@@ -367,6 +327,12 @@ $(document).ready(function() {
     
   });
 
+  // #endregion modals: compare , quick view , mini card 
+  
+  
+  
+  
+  
   /*--------- quantity change js start ---------*/
   //   $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
   //   $('.pro-qty').append('<span class="inc qtybtn">+</span>');

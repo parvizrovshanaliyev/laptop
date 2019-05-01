@@ -21,6 +21,175 @@
 21. modal
 22. sidebar
 23. footer */
+/*------ Start Login & Register Page ------*/
+.login-reg-form-wrap {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  padding: 23px 30px 30px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .login-reg-form-wrap {
+    padding: 23px 15px 30px;
+  }
+}
+
+.login-reg-form-wrap h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #242424;
+  border-bottom: #ccc;
+  margin-bottom: 30px;
+}
+
+.login-reg-form-wrap form .create-account {
+  margin-top: 25px;
+}
+
+.login-reg-form-wrap .login-reg-form-meta a {
+  color: #cc2121;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .sign-up-form {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .sign-up-form {
+    margin-top: 62px;
+  }
+}
+
+/*------ end Login & Register Page ------*/
+/*-------- Start My Account Page Wrapper --------*/
+.myaccount-tab-menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.myaccount-tab-menu a {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #242424;
+  font-weight: 400;
+  font-size: 15px;
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.myaccount-tab-menu a:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.myaccount-tab-menu a:hover,
+.myaccount-tab-menu a.active {
+  background-color: #cc2121;
+  border-color: #cc2121;
+  color: #fff;
+}
+
+.myaccount-tab-menu a i.fa {
+  font-size: 14px;
+  text-align: center;
+  width: 25px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  #myaccountContent {
+    margin-top: 30px;
+  }
+}
+
+.myaccount-content {
+  border: 1px solid #eeeeee;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 575.98px) {
+  .myaccount-content {
+    padding: 20px 15px;
+  }
+}
+
+.myaccount-content form {
+  margin-top: -20px;
+}
+
+.myaccount-content h3 {
+  font-size: 20px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.myaccount-content .welcome a {
+  color: #242424;
+}
+
+.myaccount-content .welcome a:hover {
+  color: #cc2121;
+}
+
+.myaccount-content .welcome strong {
+  font-weight: 500;
+  color: #cc2121;
+}
+
+.myaccount-content fieldset {
+  margin-top: 20px;
+}
+
+.myaccount-content fieldset legend {
+  color: #242424;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-bottom: 1px dashed #ccc;
+}
+
+.myaccount-table {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.myaccount-table table th,
+.myaccount-table .table th {
+  color: #242424;
+  padding: 10px;
+  font-weight: 400;
+  background-color: #f8f8f8;
+  border-color: #ccc;
+  border-bottom: 0;
+}
+
+.myaccount-table table td,
+.myaccount-table .table td {
+  padding: 10px;
+  vertical-align: middle;
+  border-color: #ccc;
+}
+
+.saved-message {
+  background-color: #f4f5f7;
+  border-top: 3px solid #cc2121;
+  border-radius: 5px 5px 0 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: #555;
+  padding: 20px;
+}
+
+/*-------- Start My Account Page Wrapper --------*/
 /*---------- main menu style start ---------*/
 .main-menu ul {
   display: -webkit-box;
