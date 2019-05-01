@@ -6,6 +6,7 @@ Table of content
 3.  section tabs new sale trending
 4.  quick view modal inner slider
 5.  modals: compare , quick view , mini card
+6.  slider home
 
 -------------------------------------------------------------------*/
 $(document).ready(function() {
@@ -330,22 +331,7 @@ $(document).ready(function() {
   // #endregion modals: compare , quick view , mini card 
   
 
-  // region slider slick
-
-  $(".thing").slick({
-    dots:true,
-    autoplay:true,
-    autoplaySpeed:1300,
-    prevArrow:` `,
-    nextArrow:` `,
-    mobileFirst:true,
-    easing:`linear`,
-    speed:2000,
-    
-    
-    
-  });
-
+ 
 
 
 
