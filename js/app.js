@@ -329,6 +329,27 @@ $(document).ready(function() {
 
   // #endregion modals: compare , quick view , mini card 
   
+
+  // region slider slick
+
+  $(".thing").slick({
+    dots:true,
+    autoplay:true,
+    autoplaySpeed:1300,
+    prevArrow:` `,
+    nextArrow:` `,
+    mobileFirst:true,
+    easing:`linear`,
+    speed:2000,
+    
+    
+    
+  });
+
+
+
+
+
   
   
   
