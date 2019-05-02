@@ -1415,11 +1415,15 @@ body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button
 body #MiniCard .modal-content .modal-body .minicart-content-box .minicart-button a:last-child {
   margin-bottom: 0;
 }
-/* line 517, ../sass/style.scss */
+/* line 514, ../sass/style.scss */
+body .card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+/* line 519, ../sass/style.scss */
 body .card-header {
   background-color: #fff;
 }
-/* line 521, ../sass/style.scss */
+/* line 523, ../sass/style.scss */
 body .card-footer {
   background-color: #fff;
 }
