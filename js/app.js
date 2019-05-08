@@ -267,18 +267,19 @@ $(document).ready(function() {
   //open close conditions for modals
 
   //when compare modal open button
-  $("input:checkbox[name=cp]").on("click",function(){
+  var compareingcount=0;
+  $("input:checkbox[name=cp]").on("click", function () {
+    
+    var line = $("#line");
+    
+    if ($(this).is(":checked")) {
+      compareingcount++;
+      var product = $(this).parent().parent().parent().parent().parent();
+      var name = product.data("name");
+      var img = product.data("photo");
+      modalCompare.addClass("show");
 
-    $("input:checkbox[name=cp]").each(function() {
-      if ($(this).is(":checked")){
-
-        modalCompare.addClass("show");
-        var product=$(".product-single");
-        var line=$("#line");
-        var name =product.data("name");
-        var img=product.data("photo");
-
-            var col_3=  ` <div id="${$(this).data("id")}" class="col-3 compare-product ">
+      var col_3 = `<div id="${$(this).data("id")}" data-id="${$(this).data("id")}" class="col-3 compare-product ">
                          <div id="${$(this).data("id")}" class="minicart-thumb">
                             <ul>            
                                <li>             
@@ -291,93 +292,36 @@ $(document).ready(function() {
                                 </li>            
                             </ul>            
                           </div>          
-                          <button class="minicart-remove"><span aria-hidden="true">×</span></button>              
-                     </div>`                                
+                          <button class="minicart-remove">x</button>              
+                     </div>`
 
       line.append(col_3);
-      } 
-    });
+      
+    }
+    else{
+      compareingcount--;
+
+      $(".compare-product[id="+$(this).data("id")+"]").remove();
+      
+    }
+    
+
+    if(compareingcount==0){
+      $(".close").trigger("click");
+    }
+
+    if(compareingcount==4){
+      alert("Compare list full please one product delete");
+
+    }
+    
   });
-  $("#product-row")
-    .each(function() {
-      var product = $(".product-single");
-      // var cproduct = $(".compare-product");
-      var line = $("#line");
-      //////////////////
-      var name = product.data("name");
-      var img = product.data("photo");
-      var id = product.data("id");
-      /////////////////
-      // $('input[type="checkbox"]').filter(`#2`).on("change", function() {
-      //     if ($(this).is(":checked")) {
 
-            
-      //       // modalCompare.addClass("show");
-
-      //       // var col_3 = ` <div id="${id}" class="col-3 compare-product ">
-      //       //              <div id="${id}" class="minicart-thumb">
-      //       //                 <ul>            
-      //       //                    <li>             
-      //       //                       <a href="product-details.html">
-      //       //                         <img id="p-img" src="${img}">                
-      //       //                       </a>                            
-      //       //                     </li>            
-      //       //                     <li>            
-      //       //                       <a id="p-name" href="product-details.html">${name}</a>              
-      //       //                     </li>            
-      //       //                 </ul>            
-      //       //               </div>          
-      //       //               <button class="minicart-remove"><span aria-hidden="true">×</span></button>              
-      //       //          </div>`;
-
-      //       // line.append(col_3);
-
-      //     }else{
-
-      //     }
-      //   });
-    });
-
-  
-
-
-  // $('input[type="checkbox"]').filter("#compareCheck").on("click",function(e){
-
-  //   if($(this).is(':checked')){
-  //     modalCompare.addClass("show");
-  //     var product=$(".product-single");
-  //     var cproduct=$(".compare-product");
-  //     var line=$("#line");
-
-  //     var name =product.data("name");
-  //     var img=product.data("photo");
-  //     var id=product.data("id");
-  //     var col_3=  ` <div id="${id}" class="col-3 compare-product ">
-  //                        <div id="${id}" class="minicart-thumb">
-  //                           <ul>            
-  //                              <li>             
-  //                                 <a href="product-details.html">
-  //                                   <img id="p-img" src="${img}">                
-  //                                 </a>                            
-  //                               </li>            
-  //                               <li>            
-  //                                 <a id="p-name" href="product-details.html">${name}</a>              
-  //                               </li>            
-  //                           </ul>            
-  //                         </div>          
-  //                         <button class="minicart-remove"><span aria-hidden="true">×</span></button>              
-  //                    </div>`                                
-
-  //     line.append(col_3);                         
-  //     // cproduct.find("#p-name").text(product.data("name"));
-  //     // cproduct.find("#p-img").attr("src",product.data("photo"));
-  //     // $(".minicart-thumb").attr("id",product.data("id"));
-
-  //   }else{
-  //      line.remove(col_3)
-
-  //   }
-  // });
+  $(document).on("click",".minicart-remove",function(){
+    var parent=$(this).parent();
+  compareingcount--;
+  $(".compare-product[id="+parent.data("id")+"]").remove();
+  });
   openCompare.on("click", function(e) {
     e.preventDefault();
     modalCompare.addClass("show");
