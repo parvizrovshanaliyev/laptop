@@ -295,7 +295,6 @@ $(document).ready(function() {
                      </div>`                                
 
       line.append(col_3);
-
       } 
     });
   });
