@@ -585,7 +585,7 @@
                     <div class="col-lg-9">
                         <div class="row">
                             <!-- #region product single  -->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-lg-4 col-md-6 mb-4 product-single" data-id="1" data-photo="assets/img/product/mini.jpg" data-name="ZenBook 13 UX333FA-DH51">
                                 <div class="card h-100">
                                     <div class="card-header border-0 d-flex">
                                         <div class="product-label new mr-3">
@@ -612,24 +612,30 @@
                                                 <span class="price-regular">$60.00</span>
                                                 <span class="price-old"><del>$70.00</del></span>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="card-footer">
-                                        <div class="pro-btns d-flex">
+                                        <div class="pro-btns d-flex justify-content-around">
                                             <div class="wish mr-3">
                                                 <a href="#"><i class="far  fa-heart"></i></a>
                                             </div>
-                                            <div class="compare-prod mr-3">
+                                            
+                                            <!-- <div class="compare-prod mr-3">
                                                 <a href="#" data-target=".compare" class="minicart-btn openBtn">
                                                     <i class="fas fa-sync"></i>
                                                 </a>
                                                 <a href="#"></a>
-                                            </div>
+                                            </div> -->
                                             <div class="quickView d-none  d-md-block mr-3">
                                                 <a class="showModal open-qv" href="#" data-toggle="modal"
                                                     data-target=".quickViewModal"><i class="fas fa-search"></i></a>
                                             </div>
-                                            <div class="add-to-card">
+                                            <div class="custom-control custom-checkbox mt-1">
+                                                    <input type="checkbox"   class="custom-control-input" id="compareCheck">
+                                                    <label class="custom-control-label" for="compareCheck">Compare</label>
+                                            </div>
+                                            <div class="add-to-card mr-1">
                                                 <a href="#" data-toggle="modal" data-target="#MiniCard"
                                                     class="minicart-btn open-card btn btn-cart2">
                                                     <i class="fa fa-cart-arrow-down"></i>
@@ -966,8 +972,23 @@
                             <a href="compare.html">Compare</a>
                         </div>
                         <div class="col-8 product-det">
-                            <div class="row">
-                                <div class="col-3  ">
+                            <div id="line" class="row ">
+                                <!-- <div class="col-3 compare-product ">
+                                    <div id="" class="minicart-thumb">
+                                        <ul>
+                                            <li>
+                                                <a href="product-details.html">
+                                                    <img id="p-img" src="">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="p-name" href="product-details.html"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="minicart-remove"><span aria-hidden="true">×</span></button>
+                                </div> -->
+                                <!-- <div class="col-3 ">
                                     <div class="minicart-thumb">
                                         <ul>
                                             <li>
@@ -997,21 +1018,6 @@
                                     </div>
                                     <button class="minicart-remove"><span aria-hidden="true">×</span></button>
                                 </div>
-                                <div class="col-3 ">
-                                    <div class="minicart-thumb">
-                                        <ul>
-                                            <li>
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/mini.jpg" alt="product">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="product-details.html">Dozen White Botanical </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                </div>
                                 <div class="col-3  ">
                                     <div class="minicart-thumb">
                                         <ul>
@@ -1026,7 +1032,7 @@
                                         </ul>
                                     </div>
                                     <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-1 ">
@@ -1127,7 +1133,7 @@
         <!-- #region Quick view modal start -->
         <div class="modal section-space fade quickViewModal" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div style="max-width: 1520px;" class="modal-dialog modal-lg">
+            <div style="max-width: 1486px;" class="modal-dialog modal-lg">
                 <div class="modal-content p-5">
                     <div class="modal-header border-0">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

@@ -267,6 +267,45 @@ $(document).ready(function() {
   //open close conditions for modals
 
   //when compare modal open button
+  $('input[type="checkbox"]').filter("#compareCheck").on("change",function(e){
+
+    if(e.target.checked){
+      modalCompare.addClass("show");
+      var product=$(".product-single");
+      var cproduct=$(".compare-product");
+      var line=$("#line");
+
+      var name =product.data("name");
+      var img=product.data("photo");
+      var id=product.data("id");
+      var col_3=  ` <div class="col-3 compare-product ">
+                         <div id="${id}" class="minicart-thumb">
+                            <ul>            
+                               <li>             
+                                  <a href="product-details.html">
+                                    <img id="p-img" src="${img}">                
+                                  </a>                            
+                                </li>            
+                                <li>            
+                                  <a id="p-name" href="product-details.html">${name}</a>              
+                                </li>            
+                            </ul>            
+                          </div>          
+                          <button class="minicart-remove"><span aria-hidden="true">×</span></button>              
+                     </div>`                                
+
+      line.append(col_3);                         
+      // cproduct.find("#p-name").text(product.data("name"));
+      // cproduct.find("#p-img").attr("src",product.data("photo"));
+      // $(".minicart-thumb").attr("id",product.data("id"));
+
+    }else{
+       remove(col_3)
+      // cproduct.find("#p-name").text("salam");
+      // cproduct.find("#p-img").attr("src","");
+      // $(".minicart-thumb").attr("id","");
+    }
+  });
   openCompare.on("click", function(e) {
     e.preventDefault();
     modalCompare.addClass("show");
