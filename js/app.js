@@ -9,6 +9,7 @@ Table of content
 6.  slider home
 
 -------------------------------------------------------------------*/
+// $('.container').loader('show','<img src="loader.gif">');
 $(document).ready(function() {
   console.log("ssss");
   
