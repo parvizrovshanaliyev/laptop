@@ -21,6 +21,30 @@
 21. modal
 22. sidebar
 23. footer */
+
+/* top scroll animation */
+#topBtn{
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  font-size: 27px;
+  border: 1px solid #CC2121;
+  background: transparent;
+  transition: 2s ease-in;
+  cursor: pointer;
+  display: none;
+  border-radius: 18px;
+    padding: 0 10px;
+}
+
+#topBtn i {
+  color:#CC2121;
+}
+#topBtn:focus{
+  outline:none;
+
+}
+/* top scroll animation */
 /*------ Start Compare Page Wrapper -----*/
 .compare-table .table tbody tr td {
   text-align: center;

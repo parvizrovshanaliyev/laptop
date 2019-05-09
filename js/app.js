@@ -6,7 +6,8 @@ Table of content
 3.  section tabs new sale trending
 4.  quick view modal inner slider
 5.  modals: compare , quick view , mini card
-6.  slider home
+6.  quantity -1+
+7.  scroll top page
 
 -------------------------------------------------------------------*/
 // $('.container').loader('show','<img src="loader.gif">');
@@ -249,7 +250,7 @@ $(document).ready(function() {
   
   // #endregion quick view modal inner slider 
   
-  // region 5.modals: compare , quick view , mini card 
+  // #region 5.modals: compare , quick view , mini card 
   // Compare modal
   let modalCompare = $(".compare");
   let openCompare = $(".openBtn");
@@ -399,18 +400,8 @@ $(document).ready(function() {
   });
 
   // #endregion modals: compare , quick view , mini card 
-  
-
  
-
-
-
-
-  
-  
-  
-  
-// #region quantity change js start ---------*/
+  // #region 6.quantity change js start ---------*/
     $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
     $('.pro-qty').append('<span class="inc qtybtn">+</span>');
     $('.qtybtn').on('click', function () {
@@ -428,7 +419,26 @@ $(document).ready(function() {
         }
         $button.parent().find('input').val(newVal);
 	});
- // //#endregion quantity change js end ---------*/
+ //#endregion 6.quantity change js end ---------*/
+
+  //#region 7. scroll top page
+  $(window).scroll(function(){
+ 
+    if($(this).scrollTop()>200){
+      $("#topBtn").fadeIn();
+    }else{
+
+      $("#topBtn").fadeOut();
+
+    }
+  });
+  
+  $("#topBtn").click(function(){
+  $('html ,body').animate({scrollTop:0},800);
+  });
+  //#endregion 7. scroll top page 
+
+
   // /*------- Countdown Activation start -------*/
   // $('[data-countdown]').each(function () {
   // 	var $this = $(this),
