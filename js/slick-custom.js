@@ -5,7 +5,7 @@ $(document).ready(function(){
  $(".thing").slick({
     dots:true,
     autoplay:true,
-    autoplaySpeed:1300,
+    // autoplaySpeed:1300,
     prevArrow:` `,
     nextArrow:` `,
     mobileFirst:true,

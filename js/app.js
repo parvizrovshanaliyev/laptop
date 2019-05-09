@@ -295,7 +295,11 @@ $(document).ready(function() {
                           <button class="minicart-remove">x</button>              
                      </div>`
 
-      line.append(col_3);
+      
+       
+        line.append(col_3);
+        
+      
       
     }
     else{
@@ -305,15 +309,25 @@ $(document).ready(function() {
       
     }
     
-
+    if($(this).is(":checked").length>4){
+      swal("product compare list full .Please delete product !", {
+        button: false,
+      });
+      $(this).removeAttr("checked")
+     
+    }else(
+      $(this).prop("checked",true)
+    )
     if(compareingcount==0){
+      
       $(".close").trigger("click");
     }
 
-    if(compareingcount==4){
-      alert("Compare list full please one product delete");
-
-    }
+    // if(compareingcount >4){
+    //   
+    //   compareingcount--;
+    //   $(".compare-product[id="+$(this).data("id")+"]").remove();
+    // }
     
   });
 
