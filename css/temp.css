@@ -21,7 +21,102 @@
 21. modal
 22. sidebar
 23. footer */
+/*------ Start Compare Page Wrapper -----*/
+.compare-table .table tbody tr td {
+  text-align: center;
+  padding: 20px 20px;
+  vertical-align: middle;
+  border-color: #ccc;
+}
 
+.compare-table .table tbody tr td.first-column {
+  min-width: 175px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #242424;
+  margin: 0;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .compare-table .table tbody tr td.first-column {
+    min-width: 115px;
+  }
+}
+
+.compare-table .table tbody tr td.product-image-title {
+  min-width: 310px;
+  vertical-align: bottom;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .compare-table .table tbody tr td.product-image-title {
+    min-width: 220px;
+  }
+}
+
+.compare-table .table tbody tr td.product-image-title .image {
+  clear: both;
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.compare-table .table tbody tr td.product-image-title .category {
+  float: left;
+  clear: both;
+  color: #cc2121;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+.compare-table .table tbody tr td.product-image-title .title {
+  float: left;
+  clear: both;
+  font-size: 16px;
+  color: #242424;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.compare-table .table tbody tr td.product-image-title .title:hover {
+  color: #cc2121;
+}
+
+.compare-table .table tbody tr td.pro-desc p {
+  text-align: left;
+  margin: 0;
+}
+
+.compare-table .table tbody tr td.pro-price,
+.compare-table .table tbody tr td.pro-color,
+.compare-table .table tbody tr td.pro-stock {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.compare-table .table tbody tr td.pro-remove button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.compare-table .table tbody tr td.pro-remove button:hover {
+  color: #e74c3c;
+}
+
+.compare-table .table tbody tr td.pro-remove button i {
+  font-size: 20px;
+}
+
+.compare-table .table tbody tr td.pro-ratting i {
+  color: #cc2121;
+}
+
+/*------ end Compare Page Wrapper -----*/
 /* #region card carausel smooth */
 
 /* #endregion card carausel */
