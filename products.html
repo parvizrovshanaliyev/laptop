@@ -1043,54 +1043,43 @@
         <!-- #endregion compare -->
         
         <!-- region compare modal mobile-->
-       <a href="#" data-target=".compareM" class="minicart-btn openBtnM d-md-none  d-sm-block compareOpen">
-                <i class="fas fa-chevron-up">
-                    <span class="tooltip-text">Compare</span>
-                </i>
-            </a>
-            <div class="compareM fade d-md-none  d-sm-block border-0 ">
-                <div style="border-top: 1px solid #555;" class="modal-content ">
-                    <div class="modal-body border-0">
-                        <div class="row">
-                            <div class="col-3 text">
-                                <h3>Product Comparison</h3>
-                                <p class="d-none  d-lg-block">Product added to comparison. Add up to 4 products or proceed
-                                    to view compare products
-                                    selected.
-                                </p>
-                                <a href="compare.html">Compare</a>
-                            </div>
-                            <div class="col-8 product-det">
-                                <div id="lineM" class="row ">
-                                   
-                                    <!-- <div class="col-6 compare-product ">
-                                            <div id="" class="minicart-thumb">
-                                                <ul>
-                                                    <li>
-                                                        <a href="product-details.html">
-                                                            <img id="p-img" src="assets/img//product/mini.jpg">
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a id="p-name" href="product-details.html">Asus Zenbook 14</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-1 ">
-                                <button type="button" class="closeM" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-    
+        <a href="#" data-target=".compareMobile" class="openBtnM compareOpenM d-md-none d-sm-block btn btn-dark mr-2">
+                <i class="fas fa-chevron-up"></i>
+        </a>
+         <div class="compareMobile fade  d-md-none d-sm-block border-0">
+             <div style="border-top: 1px solid #555;" class="modal-content">
+                <div class="modal-header border-0 p-1">
+                    <p>Product Comparison</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body border-0 pb-0 pt-0">
+                    <div class="row">
+                        <div class="col-12 product-det">
+                            <div id="lineM" class="row ">
+                                <!-- <div class="col-6 compare-product text-center p-0 ">
+                                    <div id="" class="minicart-thumb">
+                                        <ul>
+                                            <li>
+                                                <a href="product-details.html">
+                                                    <img id="p-img" src="assets/img/product/mini.jpg">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a id="p-name" style="font-size: 12px;"  href="product-details.html">Asus Zenbook 14</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="minicart-removeM"><span aria-hidden="true">×</span></button>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
-            </div>
+                <div class="modal-footer border-0 p-0 pb-1 justify-content-center">
+                        <a class="btn btn-dark" href="compare.html">Compare</a>
+                </div>
+             </div>
+         </div>
         <!-- #endregion compare mobile -->
         <!-- #region Quick view modal start -->
         <div class="modal section-space fade quickViewModal" tabindex="-1" role="dialog"

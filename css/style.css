@@ -724,6 +724,7 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
   padding: 0.5% 1.5%;
   border: 1px solid;
   border-radius: 16%;
+  margin-right: 1%;
 }
 /* line 18, ../sass/partials/shop/_compareModal.scss */
 .compareOpen .tooltip-text {
@@ -833,6 +834,90 @@ header .d-lg-block .header-top .header-top-settings ul li:last-child li::before 
 }
 /* line 126, ../sass/partials/shop/_compareModal.scss */
 .compare .modal-body .row .product-det .minicart-remove:hover {
+  color: #cc2121;
+}
+
+/* line 137, ../sass/partials/shop/_compareModal.scss */
+.btn-dark {
+  border: 1px solid #fff;
+}
+/* line 141, ../sass/partials/shop/_compareModal.scss */
+.btn-dark:hover {
+  color: #cc2121;
+  border: 1px solid #cc2121;
+}
+
+/* line 147, ../sass/partials/shop/_compareModal.scss */
+.compareOpenM {
+  z-index: 10000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 153, ../sass/partials/shop/_compareModal.scss */
+.compareMobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  border-top: 1px solid #555;
+}
+
+/* line 164, ../sass/partials/shop/_compareModal.scss */
+.compareMobile.fade {
+  bottom: -150px;
+  -webkit-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  -moz-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  -o-transition: opacity 0.5s linear, bottom 0.5s ease-out;
+  transition: opacity 0.5s linear, bottom 0.5s ease-out;
+}
+
+/* line 173, ../sass/partials/shop/_compareModal.scss */
+.compareMobile.fade.show {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+  z-index: 99999999;
+  -webkit-animation: slideInUp 1s forwards;
+  animation: slideInUp 1s forwards;
+}
+
+/* line 185, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-header .close:hover {
+  color: #cc2121;
+}
+/* line 188, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-header .close:focus {
+  outline: none;
+}
+/* line 198, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-body .row .product-det .minicart-removeM {
+  max-width: 30px;
+  -webkit-flex-basis: 30px;
+  -ms-flex-preferred-size: 30px;
+  flex-basis: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1;
+  color: #242424;
+  background: transparent;
+  border: none;
+}
+/* line 210, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-body .row .product-det .minicart-removeM:focus {
+  outline: 0;
+}
+/* line 215, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-body .row .product-det .minicart-removeM:hover {
+  color: #cc2121;
+}
+/* line 226, ../sass/partials/shop/_compareModal.scss */
+.compareMobile .modal-footer a:hover {
   color: #cc2121;
 }
 
