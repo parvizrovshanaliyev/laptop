@@ -584,7 +584,7 @@
                     <!-- region products -->
                     <div class="col-lg-9">
                         <div id="product-row" class="row">
-                            <!-- #region product single  -->
+                            <!-- region product single  -->
                             <div class="col-lg-4 col-md-6 mb-4 product-single" data-id="1"
                                 data-photo="assets/img/product/mini.jpg" data-name="ZenBook 14 UX333FA-DH51">
                                 <div class="card h-100">
@@ -633,7 +633,7 @@
                                                     data-target=".quickViewModal"><i class="fas fa-search"></i></a>
                                             </div>
                                             <div class="custom-control custom-checkbox mt-1">
-                                                <input type="checkbox" name="cp" val="1" class="custom-control-input"
+                                                <input type="checkbox"  name="cp" val="1" class="custom-control-input"
                                                     data-id="1" id="1">
                                                 <label class="custom-control-label" for="1">Compare</label>
                                             </div>
@@ -908,7 +908,7 @@
                                 </div>
                             </div>
                             <!-- #endregion product single  -->
-                            
+
                             <!-- #region product single  -->
                             <div class="col-lg-4 col-md-6 mb-4 product-single" data-id="6"
                                 data-photo="assets/img/product/mini.jpg" data-name="ZenBook 9 UX333FA-DH51">
@@ -991,16 +991,14 @@
             </div>
         </section>
         <!-- #endregion shop -->
-        <!-- #region compare modal mobile-->
 
-        <!-- #endregion compare -->
         <!-- #region compare modal desktop -->
-        <a href="#" data-target=".compare" class="minicart-btn openBtn compareOpen">
+        <a href="#" data-target=".compare" class="minicart-btn openBtn d-none  d-md-block compareOpen">
             <i class="fas fa-chevron-up">
                 <span class="tooltip-text">Compare</span>
             </i>
         </a>
-        <div class="compare fade  border-0 ">
+        <div class="compare fade d-none  d-md-block border-0 ">
             <div style="border-top: 1px solid #555;" class="modal-content ">
                 <div class="modal-body border-0">
                     <div class="row">
@@ -1029,51 +1027,6 @@
                                     </div>
                                     <button class="minicart-remove"><span aria-hidden="true">×</span></button>
                                 </div> -->
-                                <!-- <div class="col-3 ">
-                                    <div class="minicart-thumb">
-                                        <ul>
-                                            <li>
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/mini.jpg" alt="product">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="product-details.html">Dozen White Botanical </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                </div>
-                                <div class="col-3 ">
-                                    <div class="minicart-thumb">
-                                        <ul>
-                                            <li>
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/mini.jpg" alt="product">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="product-details.html">Dozen White Botanical </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                </div>
-                                <div class="col-3  ">
-                                    <div class="minicart-thumb">
-                                        <ul>
-                                            <li>
-                                                <a href="product-details.html">
-                                                    <img src="assets/img/product/mini.jpg" alt="product">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="product-details.html">Dozen White Botanical </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                </div> -->
                             </div>
                         </div>
                         <div class="col-1 ">
@@ -1085,92 +1038,60 @@
                     </div>
                 </div>
             </div>
-            <!-- <div style="border-top: 1px solid #555;" class="modal-content d-lg-none  d-md-none d-xl-block">
+            
+        </div>
+        <!-- #endregion compare -->
+        
+        <!-- region compare modal mobile-->
+       <a href="#" data-target=".compareM" class="minicart-btn openBtnM d-md-none  d-sm-block compareOpen">
+                <i class="fas fa-chevron-up">
+                    <span class="tooltip-text">Compare</span>
+                </i>
+            </a>
+            <div class="compareM fade d-md-none  d-sm-block border-0 ">
+                <div style="border-top: 1px solid #555;" class="modal-content ">
                     <div class="modal-body border-0">
                         <div class="row">
                             <div class="col-3 text">
                                 <h3>Product Comparison</h3>
-                                <p  class="d-none  d-lg-block">Product added to comparison. Add up to 4 products or proceed to view compare products
+                                <p class="d-none  d-lg-block">Product added to comparison. Add up to 4 products or proceed
+                                    to view compare products
                                     selected.
                                 </p>
-                                <a  href="compare.html">Compare</a>
+                                <a href="compare.html">Compare</a>
                             </div>
                             <div class="col-8 product-det">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <div class="minicart-thumb">
-                                            <ul>
-                                                <li>
-                                                    <a href="product-details.html">
-                                                        <img src="assets/img/product/mini.jpg" alt="product">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.html">Dozen White Botanical </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="minicart-thumb">
-                                            <ul>
-                                                <li>
-                                                    <a href="product-details.html">
-                                                        <img src="assets/img/product/mini.jpg" alt="product">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.html">Dozen White Botanical </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="minicart-thumb">
-                                            <ul>
-                                                <li>
-                                                    <a href="product-details.html">
-                                                        <img src="assets/img/product/mini.jpg" alt="product">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.html">Dozen White Botanical </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="minicart-thumb">
-                                            <ul>
-                                                <li>
-                                                    <a href="product-details.html">
-                                                        <img src="assets/img/product/mini.jpg" alt="product">
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-details.html">Dozen White Botanical </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <button class="minicart-remove"><span aria-hidden="true">×</span></button>
-                                    </div>
+                                <div id="lineM" class="row ">
+                                   
+                                    <!-- <div class="col-6 compare-product ">
+                                            <div id="" class="minicart-thumb">
+                                                <ul>
+                                                    <li>
+                                                        <a href="product-details.html">
+                                                            <img id="p-img" src="assets/img//product/mini.jpg">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="p-name" href="product-details.html">Asus Zenbook 14</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button class="minicart-remove"><span aria-hidden="true">×</span></button>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-1 ">
-                                <button type="button" class="close" aria-label="Close">
+                                <button type="button" class="closeM" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
-                               
+    
                             </div>
                         </div>
                     </div>
-            </div> -->
-        </div>
-        <!-- #endregion compare -->
-
+                </div>
+                
+            </div>
+        <!-- #endregion compare mobile -->
         <!-- #region Quick view modal start -->
         <div class="modal section-space fade quickViewModal" tabindex="-1" role="dialog"
             aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -1431,7 +1352,7 @@
     <!-- main end -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="assets/plugin_product_slider/js/lightslider.js"></script>

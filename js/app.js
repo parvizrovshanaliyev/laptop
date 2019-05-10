@@ -13,7 +13,7 @@ Table of content
 // $('.container').loader('show','<img src="loader.gif">');
 $(document).ready(function() {
   console.log("ssss");
-  
+
   //  #region 1. Navbar window scroll Sticky menu start
   var $window = $(window);
   $window.on("scroll", function() {
@@ -63,7 +63,7 @@ $(document).ready(function() {
   // });
   // #endregion navbar active item
 
-  // #region 3.section tabs new sale trending 
+  // #region 3.section tabs new sale trending
   $(".js-tabs-link").aniTabs({
     animation: "slide",
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
     animationSpeed: 1000,
     autoHeight: false
   });
-  // #region  trending product  
+  // #region  trending product
   $("#lightSlider").lightSlider({
     item: 3,
     autoWidth: false,
@@ -123,9 +123,9 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
- // #endregion trending product 
+  // #endregion trending product
 
- // #region  sale product  
+  // #region  sale product
   $("#lightSlider2").lightSlider({
     item: 3,
     autoWidth: false,
@@ -177,9 +177,9 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
- // #endregion sale product 
+  // #endregion sale product
 
- // #region  new product  
+  // #region  new product
   $("#lightSlider3").lightSlider({
     item: 3,
     autoWidth: false,
@@ -231,31 +231,33 @@ $(document).ready(function() {
     onBeforeNextSlide: function(el) {},
     onBeforePrevSlide: function(el) {}
   });
- // #endregion new product 
+  // #endregion new product
 
   // #endregion section tabs new sale trending ------
 
   // #region 4.quick view modal slider
- 
-    $('#imageGallery').lightSlider({
-        gallery:true,
-        item:1,
-        loop:true,
-        thumbItem:9,
-        slideMargin:0,
-        enableDrag: false,
-        currentPagerPosition:'left',
-         
-    });  
-  
-  // #endregion quick view modal inner slider 
-  
-  // #region 5.modals: compare , quick view , mini card 
-  // Compare modal
+
+  $("#imageGallery").lightSlider({
+    gallery: true,
+    item: 1,
+    loop: true,
+    thumbItem: 9,
+    slideMargin: 0,
+    enableDrag: false,
+    currentPagerPosition: "left"
+  });
+
+  // #endregion quick view modal inner slider
+
+  // region 5.modals: compare , quick view , mini card
+  // Compare desktop modal
   let modalCompare = $(".compare");
   let openCompare = $(".openBtn");
   let closeCompare = $(".close");
-
+  // Compare desktop modal
+  let modalCompareM = $(".compareM");
+  let openCompareM = $(".openBtnM");
+  let closeCompareM = $(".closeM");
   // card modal
   // let closeBtn1 = $(".close-card");
   let madalCard = $("#MiniCard");
@@ -265,23 +267,27 @@ $(document).ready(function() {
   let madalQuickView = $(".quickViewModal");
   let openQuickV = $(".open-qv");
 
-
   //open close conditions for modals
 
-  //when compare modal open button
-  var compareingcount=0;
-  $("input:checkbox[name=cp]").on("click", function () {
+  // #regioncompare desktop modal open button
+  var compareingcount = 0;
+  $("input:checkbox[name=cp]").on("change", function() {
     
     var line = $("#line");
-    
     if ($(this).is(":checked")) {
-      compareingcount++;
-      var product = $(this).parent().parent().parent().parent().parent();
+      var product = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent();
       var name = product.data("name");
       var img = product.data("photo");
+      var input=$(this);
       modalCompare.addClass("show");
-
-      var col_3 = `<div id="${$(this).data("id")}" data-id="${$(this).data("id")}" class="col-3 compare-product ">
+      var col_3 = `<div id="${$(this).data("id")}" data-id="${$(this).data(
+        "id"
+      )}" class="col-3 compare-product ">
                          <div id="${$(this).data("id")}" class="minicart-thumb">
                             <ul>            
                                <li>             
@@ -295,49 +301,137 @@ $(document).ready(function() {
                             </ul>            
                           </div>          
                           <button class="minicart-remove">x</button>              
-                     </div>`
-
+                     </div>`;
       
-       
-        line.append(col_3);
+      if ($("input:checkbox[name=cp]:checked").length>4) {
+        $("input:checkbox[name=cp]").filter(`#${$(this).data("id")}`).prop("checked",false)
+        swal("product compare list full .Please delete product !", {
+          button: false
+        });
         
+        
+      } else {
+        line.append(col_3);
+        compareingcount++;
+        // console.log(compareingcount)   
+
+       
+      }
       
-      
-    }
-    else{
+    } else {
       compareingcount--;
-
-      $(".compare-product[id="+$(this).data("id")+"]").remove();
-      
+      $(".compare-product[id=" + $(this).data("id") + "]").remove();
     }
-    
-    if($(this).is(":checked").length>4){
-      swal("product compare list full .Please delete product !", {
-        button: false,
-      });
-      $(this).removeAttr("checked")
-     
-    }else(
-      $(this).prop("checked",true)
-    )
-    if(compareingcount==0){
-      
+    if (compareingcount == 0) {
       $(".close").trigger("click");
+      
     }
 
-    // if(compareingcount >4){
-    //   
-    //   compareingcount--;
-    //   $(".compare-product[id="+$(this).data("id")+"]").remove();
-    // }
-    
-  });
 
-  $(document).on("click",".minicart-remove",function(){
-    var parent=$(this).parent();
-  compareingcount--;
-  $(".compare-product[id="+parent.data("id")+"]").remove();
+   
   });
+  
+  $(document).on("click", ".minicart-remove", function() {
+
+    var parent = $(this).parent();
+    compareingcount--;
+    $(".compare-product[id=" + parent.data("id") + "]").remove();
+    $("input:checkbox[name=cp]").filter(`#${parent.data("id")}`).prop("checked",false)
+      
+
+    // console.log(compareingcount)       
+          if (compareingcount == 0) {
+            $(".close").trigger("click");
+          }
+   
+  });
+  // #endregion compare desktop ///////////////
+
+
+  // #region mobile compare
+  // openCompareM.on("click", function(e) {
+  //   e.preventDefault();
+   
+  //   modalCompareM.addClass("show")
+    
+  // });
+  // //when compare modal close button
+  // closeCompareM.on("click", function() {
+  //   modalCompareM.removeClass("show");
+  // });
+  // var compareingcountM = 0;
+
+  // $("input:checkbox[name=cp]").on("click", function() {
+  //   var lineM = $("#lineM");
+  //   if ($(this).is(":checked")) {
+  //     var product = $(this)
+  //       .parent()
+  //       .parent()
+  //       .parent()
+  //       .parent()
+  //       .parent();
+  //     var name = product.data("name");
+  //     var img = product.data("photo");
+  //     var input=$(this);
+  //     modalCompare.addClass("show");
+  //     var col_6 = `<div id="${$(this).data("id")}" data-id="${$(this).data(
+  //       "id"
+  //     )}" class="col-6 compare-product ">
+  //                        <div id="${$(this).data("id")}" class="minicart-thumb">
+  //                           <ul>            
+  //                              <li>             
+  //                                 <a href="product-details.html">
+  //                                   <img id="p-img" src="${img}">                
+  //                                 </a>                            
+  //                               </li>            
+  //                               <li>            
+  //                                 <a id="p-name" href="product-details.html">${name}</a>              
+  //                               </li>            
+  //                           </ul>            
+  //                         </div>          
+  //                         <button class="minicart-removeM">x</button>              
+  //                    </div>`;
+
+  //     if (compareingcountM >2) {
+  //       // $("input:checkbox[name=cp]:not(:checked)").attr("disabled",true)
+  //       swal("product compare list full .Please delete product !", {
+  //         button: false
+  //       });
+        
+        
+  //     } else {
+  //       compareingcountM++;
+  //       // $("input:checkbox[name=cp]:not(:checked)").attr("disabled",false)
+  //       lineM.append(col_6);
+        
+  //     }
+
+     
+  //   } else {
+  //     compareingcountM--;
+
+  //     $(".compare-product[id=" + $(this).data("id") + "]").remove();
+  //   }
+
+  //   if (compareingcountM == 0) {
+  //     $(".close").trigger("click");
+  //   }
+  // });
+  
+  // $(document).on("click", ".minicart-remove", function() {
+
+  //   var parent = $(this).parent();
+  //   compareingcountM--;
+  //   $(".compare-product[id=" + parent.data("id") + "]").remove();
+  //         if (compareingcountM == 0) {
+  //           $(".close").trigger("click");
+  //           $("input:checkbox[name=cp]").prop("checked",false)
+  //         }
+   
+  // });
+  // #endregion mobile compare
+  
+  
   openCompare.on("click", function(e) {
     e.preventDefault();
     modalCompare.addClass("show");
@@ -349,12 +443,11 @@ $(document).ready(function() {
     //   madalQuickView.removeClass("show");
     //   madalCard.removeClass("show");
     // }
-
   });
-   //when compare modal close button
-   closeCompare.on("click", function() {
+ 
+  //when compare modal close button
+  closeCompare.on("click", function() {
     modalCompare.removeClass("show");
-
   });
 
   //when window clcik modal compare close
@@ -382,62 +475,59 @@ $(document).ready(function() {
     // }
   });
 
- 
   // closeBtn1.on("click", function() {
   //   madalCard.removeClass("show");
   // });
-  
 
   //when quick view open close compare modal
   openQuickV.on("click", function(e) {
     e.preventDefault();
     if (modalCompare.hasClass("show")) {
       modalCompare.removeClass("show");
-
-      
     }
-    
   });
 
-  // #endregion modals: compare , quick view , mini card 
- 
+  // #endregion modals: compare , quick view , mini card
+
   // #region 6.quantity change js start ---------*/
-    $('.pro-qty').prepend('<span class="dec qtybtn">-</span>');
-    $('.pro-qty').append('<span class="inc qtybtn">+</span>');
-    $('.qtybtn').on('click', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
-        if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
-        }
-        $button.parent().find('input').val(newVal);
-	});
- //#endregion 6.quantity change js end ---------*/
+  $(".pro-qty").prepend('<span class="dec qtybtn">-</span>');
+  $(".pro-qty").append('<span class="inc qtybtn">+</span>');
+  $(".qtybtn").on("click", function() {
+    var $button = $(this);
+    var oldValue = $button
+      .parent()
+      .find("input")
+      .val();
+    if ($button.hasClass("inc")) {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+      // Don't allow decrementing below zero
+      if (oldValue > 0) {
+        var newVal = parseFloat(oldValue) - 1;
+      } else {
+        newVal = 0;
+      }
+    }
+    $button
+      .parent()
+      .find("input")
+      .val(newVal);
+  });
+  //#endregion 6.quantity change js end ---------*/
 
   //#region 7. scroll top page
-  $(window).scroll(function(){
- 
-    if($(this).scrollTop()>200){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
       $("#topBtn").fadeIn();
-    }else{
-
+    } else {
       $("#topBtn").fadeOut();
-
     }
   });
-  
-  $("#topBtn").click(function(){
-  $('html ,body').animate({scrollTop:0},800);
-  });
-  //#endregion 7. scroll top page 
 
+  $("#topBtn").click(function() {
+    $("html ,body").animate({ scrollTop: 0 }, 800);
+  });
+  //#endregion 7. scroll top page
 
   // /*------- Countdown Activation start -------*/
   // $('[data-countdown]').each(function () {
@@ -448,5 +538,4 @@ $(document).ready(function() {
   // 	});
   // });
   // /*------- Countdown Activation end -------*/
-  
 });
